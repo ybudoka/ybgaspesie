@@ -60,9 +60,28 @@ tr:nth-child(even) td {
 tr:hover td {
     background: #2a2e38;
 }
-.section-title {
-    font-size: 1.2em;
-    padding-left: 8px;
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.complete-courses {
+    color: #ff6347;
+    font-weight: bold;
+}
+.complete-courses span {
+    color: #ff6347;
+    font-weight: bold;
+}
+.available-courses {
+    color: #32cd32;
+    font-weight: bold;
+}
+.available-courses span {
+    color: #32cd32;
+    font-weight: bold;
 }
 .footer-note {
     background: rgba(30, 34, 44, 0.95);
