@@ -83,6 +83,14 @@ a:hover {
     color: #32cd32;
     font-weight: bold;
 }
+.almost-complete-courses {
+    color: #ffa500;
+    font-weight: bold;
+}
+.almost-complete-courses span {
+    color: #ffa500;
+    font-weight: bold;
+}
 .footer-note {
     background: rgba(30, 34, 44, 0.95);
     padding: 12px 16px;
