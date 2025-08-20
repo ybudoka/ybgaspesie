@@ -145,3 +145,10 @@ a:hover {
     color: #ffd700;
     text-shadow: 0 2px 8px #222;
 }   
+.day-no { 
+    text-align: right;
+    font-weight: bold;
+    color: #ffd700;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
