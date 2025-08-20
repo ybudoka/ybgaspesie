@@ -14,104 +14,12 @@
     </div>
     <div class="container" style="position: relative; z-index: 1;">
         Horaire et Tarifs - Session Automne 2025
-        <div class="section" id="horaire-section">
-            <div class="section-title">Horaire</div>
-            <table border='1' cellpadding='5'><tr><th>Groupe</th><th>Date de d&eacute;but</th><th>Jour</th><th>Heure d&eacute;but</th><th>Heure fin</th></tr><tr>
-      <td>Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)</td>
-      <td>20 septembre</td>
-      <td>Samedi</td>
-      <td>9:00</td>
-      <td>9:45</td>
-      </tr><tr>
-      <td>Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)</td>
-      <td>20 septembre</td>
-      <td>Samedi</td>
-      <td>10:00</td>
-      <td>10:45</td>
-      </tr><tr>
-      <td>Initiation au Yoseikan Budo (6 &agrave; 7 ans)</td>
-      <td>9 septembre</td>
-      <td>Mardi</td>
-      <td>17:30</td>
-      <td>18:15</td>
-      </tr><tr>
-      <td>Yoseikan Budo (8 &agrave; 12 ans)</td>
-      <td>9 septembre</td>
-      <td>Mardi</td>
-      <td>18:30</td>
-      <td>19:30</td>
-      </tr><tr>
-      <td>Yoseikan Budo Technique (13 ans +)</td>
-      <td>10 septembre</td>
-      <td>Mercredi</td>
-      <td>18:00</td>
-      <td>19:30</td>
-      </tr><tr>
-      <td>Yoseikan Budo Traditionnel (13 ans +)</td>
-      <td>8 septembre</td>
-      <td>Lundi</td>
-      <td>19:00</td>
-      <td>20:30</td>
-      </tr><tr>
-      <td>Yoseikan Cardio Boxe (13 ans +)</td>
-      <td>8 septembre</td>
-      <td>Lundi</td>
-      <td>18:00</td>
-      <td>18:45</td>
-      </tr></table>
-        </div>
-        <div class="section" id="tarifs-section">
-            <div class="section-title">Tarifs</div>
-            <table border='1' cellpadding='5'><tr><th>Groupe</th><th>Nombre de cours</th><th>1<sup>er</sup> cours inscrit</th><th>2<sup>e</sup> cours inscrit</th><th>3<sup>e</sup> cours inscrit</th></tr><tr>
-        <td>Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)</td>
-        <td>10</td>
-        <td>120 $</td>
-        <td></td>
-        <td></td>
-      </tr><tr>
-        <td>Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)</td>
-        <td>10</td>
-        <td>120 $</td>
-        <td></td>
-        <td></td>
-      </tr><tr>
-        <td>Initiation au Yoseikan Budo (6 &agrave; 7 ans)</td>
-        <td>10</td>
-        <td>125 $</td>
-        <td></td>
-        <td></td>
-      </tr><tr>
-        <td>Yoseikan Budo (8 &agrave; 12 ans)</td>
-        <td>12</td>
-        <td>145 $</td>
-        <td></td>
-        <td></td>
-      </tr><tr>
-        <td>Yoseikan Budo Technique (13 ans +)</td>
-        <td>12</td>
-        <td>160 $</td>
-        <td>95 $</td>
-        <td>50 $</td>
-      </tr><tr>
-        <td>Yoseikan Budo Traditionnel (13 ans +)</td>
-        <td>12</td>
-        <td>160 $</td>
-        <td>95 $</td>
-        <td>50 $</td>
-      </tr><tr>
-        <td>Yoseikan Cardio Boxe (13 ans +)</td>
-        <td>10</td>
-        <td>110 $</td>
-        <td>70 $</td>
-        <td>40 $</td>
-      </tr></table>
-        </div>
-        <div class="section" id="rabais-section">
-            <div class="section-title">Rabais</div>
-            <table border='1' cellpadding='5'><tr><th>Groupe</th><th>Rabais pour 2 pers.</th><th>Rabais pour 3 pers.</th><th>Rabais pour 4 pers.</th><th>Rabais pour 5 pers.</th></tr><tr><td><ul><li>Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)</li><li>Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)</li><li>Initiation au Yoseikan Budo (6 &agrave; 7 ans)</li><li>Yoseikan Budo (8 &agrave; 12 ans)</li><li>Yoseikan Budo Technique (13 ans +)</li><li>Yoseikan Budo Traditionnel (13 ans +)</li><li>Yoseikan Cardio Boxe (13 ans +)</li></ul></td><td>30 $</td><td>45 $</td><td>60 $</td><td>75 $</td></tr></table>
-            <table border='1' cellpadding='5'><tr><th>Nombre de sessions</th><th>Rabais</th></tr><tr><td>2</td><td>20 $</td></tr><tr><td>3</td><td>30 $</td></tr><tr><td>4</td><td>40 $</td></tr></table>
-            Les rabais pour sessions multiples s'appliquent uniquement aux inscriptions effectu&eacute;es lors de la m&ecirc;me transaction. Pour b&eacute;n&eacute;ficier de ces rabais, le paiement complet doit &ecirc;tre effectu&eacute; au moment de l'inscription. En cas d'annulation, les rabais seront recalcul&eacute;s en fonction du nombre de sessions restantes.
-        </div>
+        {{table_horaires}}
+        {{table_tarifs}}
+
+        {{table_rabais}}
+        {{table_rabais_sessions_multiples}}
+        Les rabais pour sessions multiples s'appliquent uniquement aux inscriptions effectu&eacute;es lors de la m&ecirc;me transaction. Pour b&eacute;n&eacute;ficier de ces rabais, le paiement complet doit &ecirc;tre effectu&eacute; au moment de l'inscription. En cas d'annulation, les rabais seront recalcul&eacute;s en fonction du nombre de sessions restantes.
     </div>
 
     <div class="footer">
