@@ -97,7 +97,7 @@ a:hover {
     border-top: 1px solid #444;
     text-align: center;
 }
-.calendar-table {
+.calendar-container {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 32px;
@@ -106,7 +106,7 @@ a:hover {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-.calendar-table th, .calendar-table td {
+.calendar-container th, .calendar-container td {
     padding: 12px 8px;
     text-align: center;
     vertical-align: top;
@@ -114,17 +114,17 @@ a:hover {
     height: 100px;
     width: 14.28%;
 }
-.calendar-table th {
+.calendar-container th {
     background: linear-gradient(90deg, #2d3340 0%, #3a4052 100%);
     color: #ffd700;
     font-weight: 500;
 }
-.calendar-table td {
+.calendar-container td {
     background: rgba(36, 40, 50, 0.93);
     color: #e0e0e0;
     font-size: 0.9em;
 }
-.calendar-table td:hover {
+.calendar-container td:hover {
     background: #2a2e38;
 }
 .month-container {
