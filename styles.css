@@ -147,10 +147,63 @@ a:hover {
     color: #ffd700;
     text-shadow: 0 2px 8px #222;
 }   
-.day-no { 
+.calendar-container .course-list {
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+.calendar-container .course-item {
+    margin-bottom: 4px;
+    padding: 4px;
+    background: rgba(50, 50, 60, 0.8);
+    border-radius: 4px;
+    color: #e0e0e0;
+}
+.calendar-container .course-item:hover {
+    background: rgba(50, 50, 60, 0.9);
+}
+.calendar-container .day-no {
     text-align: right;
     font-weight: bold;
     color: #ffd700;
     font-size: 1.2em;
+    margin-bottom: 4px;
+}
+.calendar-container .empty-day {
+    color: #888;
+    font-style: italic;
+}
+.calendar-container .day-no:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+.calendar-container .course-item:hover .day-no {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+.calendar-container .course-item .day-no {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    color: #ffd700;
+    font-weight: bold;
+    text-align: center;
+}
+.calendar-container .course-item .day-no:hover {
+    color: #ffcc00;
+    text-decoration: underline;     
+}
+.calendar-container .course-item .day-no {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    color: #ffd700;
+    font-weight: bold;
+    text-align: center;
+}
+.calendar-container .course-item .day-no:hover {
+    color: #ffcc00;
+    text-decoration: underline;     
+}
+.calendar-container .course-item .day-no {
     margin-bottom: 4px;
 }
