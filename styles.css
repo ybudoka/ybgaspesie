@@ -1,3 +1,78 @@
+/* Responsive calendar styles */
+.responsive-calendar {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: linear-gradient(90deg, #2d3340 0%, #3a4052 100%);
+  color: #ffd700;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 2px;
+}
+.calendar-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.calendar-cell {
+  min-height: 70px;
+  background: rgba(36, 40, 50, 0.93);
+  border: 1px solid #333;
+  padding: 4px;
+  font-size: 0.95em;
+  position: relative;
+  box-sizing: border-box;
+}
+.calendar-cell.empty {
+  background: transparent;
+  border: none;
+}
+.calendar-cell .day-no {
+  font-weight: bold;
+  color: #ffd700;
+  font-size: 1.1em;
+  margin-bottom: 2px;
+  text-align: right;
+}
+.calendar-cell .course-list {
+  margin-top: 2px;
+}
+.calendar-cell .course-item {
+  background: rgba(50, 50, 60, 0.8);
+  border-radius: 4px;
+  color: #e0e0e0;
+  margin-bottom: 2px;
+  padding: 2px 4px;
+  font-size: 0.9em;
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 8px 2px;
+    max-width: 100vw;
+    margin: 8px auto;
+  }
+  .month-container h2 {
+    font-size: 1.1em;
+    padding: 2px 0;
+  }
+  .calendar-cell {
+    min-height: 48px;
+    font-size: 0.85em;
+    padding: 2px;
+  }
+  .calendar-header {
+    font-size: 0.9em;
+  }
+}
 body {
     margin: 0;
     padding: 0;
