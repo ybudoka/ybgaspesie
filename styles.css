@@ -54,6 +54,7 @@
   padding: 2px 4px;
   font-size: 0.9em;
 }
+/*
 @media (max-width: 700px) {
   .container {
     padding: 8px 2px;
@@ -72,29 +73,13 @@
   .calendar-header {
     font-size: 0.9em;
   }
-}
+}*/
 body {
     margin: 0;
     padding: 0;
-    background: #23272f url('fond.png') center center no-repeat;
-    background-size: cover;
+    background: #23272f url('fond.png') repeat;
     color: #f4f4f4;
     min-height: 100vh;
-}
-
-/* Pour les écrans très larges, limiter l’agrandissement */
-@media (min-width: 2000px) {
-  body {
-    background-size: 1920px auto;
-  }
-}
-
-/* Pour les petits écrans, éviter la pixellisation */
-@media (max-width: 700px) {
-  body {
-    background: #23272f url('fond.png') center center no-repeat;
-    background-size: contain;
-  }
 }
 .container {
     max-width: 900px;
@@ -324,6 +309,7 @@ a:hover {
 .responsive-table td {
     border-bottom: 1px solid #333;
 }
+/*
 @media (max-width: 600px) {
   .responsive-table table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr {
     display: block;
@@ -354,6 +340,7 @@ a:hover {
     color: #ffd700;
   }     
 }
+*/
 
 /* End of responsive calendar styles */
 /* responsive-div-table */
@@ -399,6 +386,7 @@ a:hover {
   font-size: 0.95em;
   box-sizing: border-box;
 }
+/*
 @media (max-width: 700px) {
   .responsive-div-table {
     border-radius: 8px;
@@ -418,3 +406,4 @@ a:hover {
     white-space: normal;
   }
 }
+  */
