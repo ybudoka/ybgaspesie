@@ -76,13 +76,24 @@
 body {
     margin: 0;
     padding: 0;
-    background: #23272f url('fond.png') center center/cover repeat;
+    background: #23272f url('fond.png') center center no-repeat;
+    background-size: cover;
     color: #f4f4f4;
     min-height: 100vh;
 }
+
+/* Pour les écrans très larges, limiter l’agrandissement */
+@media (min-width: 2000px) {
+  body {
+    background-size: 1920px auto;
+  }
+}
+
+/* Pour les petits écrans, éviter la pixellisation */
 @media (max-width: 700px) {
   body {
-    background: #23272f url('fond.png') center center/contain repeat;
+    background: #23272f url('fond.png') center center no-repeat;
+    background-size: contain;
   }
 }
 .container {
