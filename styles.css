@@ -343,6 +343,8 @@ a:hover {
 /* responsive-div-table */
 
 .responsive-div-table {
+  display: grid;
+  grid-template-columns: repeat(var(--div-table-cols, 5), 1fr);
   width: 100%;
   margin-bottom: 32px;
   background: rgba(44, 48, 60, 0.98);
