@@ -31,6 +31,10 @@
   font-size: 0.95em;
   position: relative;
   box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
 }
 .calendar-cell.empty {
   background: transparent;
@@ -53,6 +57,10 @@
   margin-bottom: 2px;
   padding: 2px 4px;
   font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
 }
 /*
 @media (max-width: 700px) {
@@ -385,6 +393,7 @@ a:hover {
   white-space: nowrap;
   font-size: 0.95em;
   box-sizing: border-box;
+  cursor: pointer;
 }
 /*
 @media (max-width: 700px) {
