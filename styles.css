@@ -80,6 +80,11 @@ body {
     color: #f4f4f4;
     min-height: 100vh;
 }
+@media (max-width: 700px) {
+  body {
+    background: #23272f url('fond.png') center center/contain repeat;
+  }
+}
 .container {
     max-width: 900px;
     margin: 40px auto;
