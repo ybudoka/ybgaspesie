@@ -32,7 +32,7 @@
   border: 1px solid #2d3340;
   border-radius: 0 0 6px 6px;
   padding: 6px 4px;
-  font-size: 1em;
+    font-size: 0.85em;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -100,7 +100,7 @@
     }
     .calendar-cell, .calendar-container td {
         min-height: 44px;
-        font-size: 0.85em;
+        font-size: 0.75em;
         padding: 4px 2px;
     }
     .modal-content {
@@ -139,7 +139,7 @@
     }
     .calendar-cell, .calendar-container td {
         min-height: 32px;
-        font-size: 0.75em;
+        font-size: 0.65em;
         padding: 2px 1px;
     }
     .modal-content {
@@ -190,7 +190,7 @@
   color: #e0e0e0;
   margin-bottom: 2px;
   padding: 2px 4px;
-  font-size: 0.9em;
+    font-size: 0.8em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
