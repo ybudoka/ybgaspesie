@@ -8,27 +8,6 @@
 
     <link rel="stylesheet" href="styles.css">
     
-    <style>
-      .modal-overlay {
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(0,0,0,0.5);
-        z-index: 9998;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .modal {
-        background: #fff;
-        border-radius: 8px;
-        padding: 24px 32px;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-        z-index: 9999;
-        max-width: 90vw;
-        max-height: 90vh;
-        overflow: auto;
-      }
-    </style>
     <script>
       function showCourseModal(nomCours, heures, lieu) {
         // Remove any existing overlay/modal
@@ -42,7 +21,7 @@
 
         // Create modal
         const modal = document.createElement('div');
-        modal.className = 'modal';
+        modal.className = 'modal-content';
         modal.innerHTML = `
           <div>
             <h2>${nomCours}</h2>
