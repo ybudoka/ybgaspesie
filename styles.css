@@ -127,6 +127,45 @@
     }
 }
 .calendar-cell:hover {
+/* Optimisation pour écrans de mobile très petits */
+@media (max-width: 400px) {
+    body {
+        font-size: 0.85em;
+    }
+    h1, h2 {
+        font-size: 1em;
+    }
+    .container {
+        padding: 8px 2px;
+    }
+    .calendar-cell, .calendar-container td {
+        min-height: 32px;
+        font-size: 0.75em;
+        padding: 2px 1px;
+    }
+    .modal-content {
+        padding: 8px 2px;
+        font-size: 0.85em;
+        max-width: 100vw;
+    }
+    .calendar-header {
+        font-size: 0.8em;
+        padding: 2px 1px;
+    }
+    .div-table-header, .div-table-row, .div-table-cell {
+        font-size: 0.75em;
+        padding: 4px 2px;
+    }
+    .month-container h2 {
+        font-size: 0.85em;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .responsive-table th, .responsive-table td {
+        padding: 4px 2px;
+        font-size: 0.75em;
+    }
+}
   background: #2a2e38;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
