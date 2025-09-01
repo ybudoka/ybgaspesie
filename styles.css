@@ -126,7 +126,6 @@
         font-size: 0.85em;
     }
 }
-.calendar-cell:hover {
 /* Optimisation pour écrans de mobile très petits */
 @media (max-width: 400px) {
     body {
@@ -166,6 +165,8 @@
         font-size: 0.75em;
     }
 }
+
+.calendar-cell:hover {
   background: #2a2e38;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
