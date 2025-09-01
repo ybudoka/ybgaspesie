@@ -87,6 +87,45 @@
   opacity: 1;
   pointer-events: auto;
 }
+/* Améliorations responsive pour petits écrans */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.95em;
+    }
+    h1, h2 {
+        font-size: 1.2em;
+    }
+    .container {
+        padding: 16px 6px;
+    }
+    .calendar-cell, .calendar-container td {
+        min-height: 44px;
+        font-size: 0.85em;
+        padding: 4px 2px;
+    }
+    .modal-content {
+        padding: 16px 8px;
+        font-size: 0.95em;
+        max-width: 98vw;
+    }
+    .calendar-header {
+        font-size: 0.9em;
+        padding: 4px 2px;
+    }
+    .div-table-header, .div-table-row, .div-table-cell {
+        font-size: 0.85em;
+        padding: 6px 4px;
+    }
+    .month-container h2 {
+        font-size: 1em;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .responsive-table th, .responsive-table td {
+        padding: 8px 6px;
+        font-size: 0.85em;
+    }
+}
 .calendar-cell:hover {
   background: #2a2e38;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
