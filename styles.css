@@ -12,12 +12,15 @@
 .calendar-header {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background: linear-gradient(90deg, #2d3340 0%, #3a4052 100%);
+  background: linear-gradient(120deg, rgba(36,40,50,0.97) 60%, rgba(44,48,60,0.93) 100%);
   color: #ffd700;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
-  border-radius: 8px 8px 0 0;
+  border-radius: 6px 6px 0 0;
   margin-bottom: 2px;
+  font-size: 1em;
+  padding: 6px 4px;
+  box-sizing: border-box;
 }
 .calendar-row {
   display: grid;
@@ -27,7 +30,7 @@
   min-height: 70px;
   background: linear-gradient(120deg, rgba(36,40,50,0.97) 60%, rgba(44,48,60,0.93) 100%);
   border: 1px solid #2d3340;
-  border-radius: 6px;
+  border-radius: 0 0 6px 6px;
   padding: 6px 4px;
   font-size: 1em;
   position: relative;
@@ -39,6 +42,8 @@
   transition: background 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
+
+
 .calendar-cell:hover {
   background: #2a2e38;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
