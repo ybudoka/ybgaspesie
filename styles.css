@@ -35,7 +35,6 @@
   font-size: 1em;
   position: relative;
   box-sizing: border-box;
-  word-break: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -74,26 +73,12 @@
   white-space: nowrap;
   cursor: pointer;
 }
-/*
-@media (max-width: 700px) {
-  .container {
-    padding: 8px 2px;
-    max-width: 100vw;
-    margin: 8px auto;
-  }
-  .month-container h2 {
-    font-size: 1.1em;
-    padding: 2px 0;
-  }
-  .calendar-cell {
-    min-height: 48px;
-    font-size: 0.85em;
-    padding: 2px;
-  }
-  .calendar-header {
-    font-size: 0.9em;
-  }
-}*/
+
+.calendar-cell .course-item:hover {
+  background: rgba(50, 50, 60, 0.9);
+}
+
+
 body {
     margin: 0;
     padding: 0;
