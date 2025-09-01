@@ -7,6 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+    
+    <script>
+      function showCourseModal(nomCours, heures, lieu) {
+        const modalContent = `
+          <div>
+            <h2>${nomCours}</h2>
+            <p><strong>Heures :</strong> ${heures}</p>
+            <p><strong>Lieu :</strong> ${lieu}</p>
+          </div>
+        `;
+        const modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.innerHTML = modalContent;
+        document.body.appendChild(modal);
+      }
+    </script>
+  
 </head>
 <body>
     <div style="text-align: center; margin-top: 20px;">
