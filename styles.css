@@ -31,7 +31,7 @@
   font-size: 0.95em;
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;
+  word-break: break-word;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -317,38 +317,6 @@ a:hover {
 .responsive-table td {
     border-bottom: 1px solid #333;
 }
-/*
-@media (max-width: 600px) {
-  .responsive-table table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr {
-    display: block;
-  }
-  .responsive-table thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  .responsive-table tr {
-    border: 1px solid #ccc;
-    margin-bottom: 8px;
-  }
-  .responsive-table td {
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-  }
-  .responsive-table td:before {
-    position: absolute;
-    top: 12px;
-    left: 16px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    font-weight: bold;
-    color: #ffd700;
-  }     
-}
-*/
 
 /* End of responsive calendar styles */
 /* responsive-div-table */
@@ -395,24 +363,3 @@ a:hover {
   box-sizing: border-box;
   cursor: pointer;
 }
-/*
-@media (max-width: 700px) {
-  .responsive-div-table {
-    border-radius: 8px;
-    margin-bottom: 16px;
-  }
-  .div-table-header {
-    font-size: 0.9em;
-    padding: 8px 0;
-  }
-  .div-table-row {
-    font-size: 0.85em;
-    padding: 4px 0;
-  }
-  .div-table-cell {
-    padding: 4px 8px;
-    font-size: 0.85em;
-    white-space: normal;
-  }
-}
-  */
