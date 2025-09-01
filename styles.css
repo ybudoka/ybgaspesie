@@ -25,16 +25,23 @@
 }
 .calendar-cell {
   min-height: 70px;
-  background: rgba(36, 40, 50, 0.93);
-  border: 1px solid #333;
-  padding: 4px;
-  font-size: 0.95em;
+  background: linear-gradient(120deg, rgba(36,40,50,0.97) 60%, rgba(44,48,60,0.93) 100%);
+  border: 1px solid #2d3340;
+  border-radius: 6px;
+  padding: 6px 4px;
+  font-size: 1em;
   position: relative;
   box-sizing: border-box;
   word-break: break-word;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: background 0.2s, box-shadow 0.2s;
   cursor: pointer;
+}
+.calendar-cell:hover {
+  background: #2a2e38;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 .calendar-cell.empty {
   background: transparent;
