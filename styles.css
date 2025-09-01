@@ -42,7 +42,30 @@
   cursor: pointer;
 }
 
+.course-tooltip {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background: rgba(44, 48, 60, 0.98);
+  color: #ffd700;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+  font-size: 0.95em;
+  white-space: pre-line;
+  z-index: 10;
+  min-width: 180px;
+  max-width: 260px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s;
+}
 
+.calendar-cell .course-item:hover .course-tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
 .calendar-cell:hover {
   background: #2a2e38;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
