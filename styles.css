@@ -42,6 +42,27 @@
   cursor: pointer;
 }
 
+.calendar-cell.holiday-note {
+    background: linear-gradient(120deg, #3a4052 60%, #23272f 100%);
+    border: 2px dashed #ffd700;
+    color: #ffd700;
+    font-weight: bold;
+    opacity: 0.85;
+    box-shadow: 0 2px 12px rgba(255, 215, 0, 0.08);
+    position: relative;
+}
+
+.calendar-cell.holiday-note::after {
+    position: absolute;
+    bottom: 6px;
+    left: 8px;
+    font-size: 0.8em;
+    color: #ffd700;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
