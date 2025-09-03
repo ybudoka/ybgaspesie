@@ -42,23 +42,39 @@
   cursor: pointer;
 }
 
+
 .calendar-cell.holiday-note {
-    background: linear-gradient(120deg, #3a4052 60%, #ffd700 100%);
-    border: 2px dashed #ffd700;
+    background: linear-gradient(120deg, #3a4052 40%, #ffd700 100%);
+    border: 3px dashed #ffd700;
     color: #23272f;
     font-weight: bold;
-    opacity: 0.95;
-    box-shadow: 0 4px 18px rgba(255, 215, 0, 0.18);
+    opacity: 1;
+    box-shadow: 0 0 16px 6px rgba(255, 215, 0, 0.35), 0 4px 24px rgba(255, 215, 0, 0.22);
     position: relative;
+    text-shadow: 0 0 8px #ffd700, 0 0 2px #fff;
+    transition: box-shadow 0.3s, background 0.3s;
+    z-index: 2;
 }
+.calendar-cell.holiday-note:hover {
+    box-shadow: 0 0 32px 12px rgba(255, 215, 0, 0.45), 0 8px 32px rgba(255, 215, 0, 0.32);
+    background: linear-gradient(120deg, #ffd700 80%, #3a4052 100%);
+}
+
 .calendar-cell.holiday-name {
-    background: linear-gradient(120deg, #ffd700 60%, #3a4052 100%);
-    border: 2px solid #ffd700;
+    background: linear-gradient(120deg, #ffd700 80%, #fffbe6 100%);
+    border: 3px solid #ffd700;
     color: #23272f;
     font-weight: bold;
-    opacity: 0.98;
-    box-shadow: 0 6px 24px rgba(255, 215, 0, 0.22);
+    opacity: 1;
+    box-shadow: 0 0 24px 10px rgba(255, 215, 0, 0.45), 0 8px 32px rgba(255, 215, 0, 0.32);
     position: relative;
+    text-shadow: 0 0 12px #ffd700, 0 0 2px #fff;
+    transition: box-shadow 0.3s, background 0.3s;
+    z-index: 2;
+}
+.calendar-cell.holiday-name:hover {
+    box-shadow: 0 0 40px 16px rgba(255, 215, 0, 0.55), 0 12px 40px rgba(255, 215, 0, 0.38);
+    background: linear-gradient(120deg, #fffbe6 80%, #ffd700 100%);
 }
 .modal-overlay {
   position: fixed;
