@@ -35,8 +35,9 @@
     font-size: 0.85em;
   position: relative;
   box-sizing: border-box;
-  white-space: normal;
-  word-break: break-word; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   transition: background 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
@@ -215,8 +216,9 @@
   margin-bottom: 2px;
   padding: 2px 4px;
   font-size: 0.8em;
-  white-space: normal;
-  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
 }
 .calendar-cell .course-hours {
@@ -350,7 +352,7 @@ a:hover {
     margin-bottom: 32px;
     background: rgba(44, 48, 60, 0.98);
     border-radius: 12px;
-    overflow: hidden;
+    overflow: scroll;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 .calendar-container table {
