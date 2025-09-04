@@ -225,18 +225,22 @@
     display: block;
     font-size: 0.75em;
     color: #ffd700;
-    margin-top: 1px;
+    margin-top: 2px;
+    margin-left: 2px;
     font-weight: 500;
     opacity: 0.85;
     text-align: left;
     letter-spacing: 0.5px;
+    padding: 0 2px;
 }
 .calendar-cell .course-item .course-hours {
     color: #ffe066;
     font-size: 0.72em;
-    margin-left: 4px;
+    margin-left: 6px;
+    margin-top: 1px;
     font-style: italic;
     opacity: 0.8;
+    padding: 0 2px;
 }
 .calendar-cell .course-item:hover {
   background: rgba(50, 50, 60, 0.9);
