@@ -214,10 +214,9 @@
   color: #e0e0e0;
   margin-bottom: 2px;
   padding: 2px 4px;
-    font-size: 0.8em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 0.8em;
+  white-space: normal;
+  word-break: break-word;
   cursor: pointer;
 }
 .calendar-cell .course-hours {
@@ -520,9 +519,8 @@ a:hover {
 .div-table-cell {
   padding: 8px 12px;
   text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
   font-size: 0.95em;
   box-sizing: border-box;
   cursor: pointer;
