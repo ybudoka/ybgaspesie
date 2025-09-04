@@ -50,7 +50,10 @@
     opacity: 0.75;
     box-shadow: 0 2px 8px rgba(255, 215, 0, 0.05);
     position: relative;
+    white-space: normal;
+    word-break: break-word;
 }
+
 .calendar-cell.holiday-name {
     background: linear-gradient(120deg, #23272f 60%, #3a4052 100%);
     border: 2px solid #2d3340;
@@ -59,7 +62,8 @@
     opacity: 0.80;
     box-shadow: 0 2px 10px rgba(255, 215, 0, 0.07);
     position: relative;
-    white-space: pre-line;
+    white-space: normal;
+    word-break: break-word;
     padding: 12px 10px;
     margin: 6px 0;
 }
