@@ -35,9 +35,8 @@
     font-size: 0.85em;
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word; 
   transition: background 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
