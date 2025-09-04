@@ -221,7 +221,23 @@
   white-space: nowrap;
   cursor: pointer;
 }
-
+.calendar-cell .course-hours {
+    display: block;
+    font-size: 0.75em;
+    color: #ffd700;
+    margin-top: 1px;
+    font-weight: 500;
+    opacity: 0.85;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+.calendar-cell .course-item .course-hours {
+    color: #ffe066;
+    font-size: 0.72em;
+    margin-left: 4px;
+    font-style: italic;
+    opacity: 0.8;
+}
 .calendar-cell .course-item:hover {
   background: rgba(50, 50, 60, 0.9);
 }
