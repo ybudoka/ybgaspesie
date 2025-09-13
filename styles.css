@@ -141,6 +141,11 @@
         font-size: 0.85em;
         padding: 6px 4px;
     }
+    .div-table-cell-group {
+        font-size: 0.85em;
+        padding: 6px 4px;
+    }
+
     .month-container h2 {
         font-size: 1em;
         padding-top: 2px;
@@ -180,6 +185,11 @@
         font-size: 0.75em;
         padding: 4px 2px;
     }
+    .div-table-cell-group {
+        font-size: 0.75em;
+        padding: 4px 2px;
+    }
+
     .month-container h2 {
         font-size: 0.85em;
         padding-top: 1px;
@@ -526,4 +536,15 @@ a:hover {
   font-size: 0.95em;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.div-table-cell-group {
+    padding: 8px 12px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.95em;
+    box-sizing: border-box;
+    cursor: pointer;
 }
