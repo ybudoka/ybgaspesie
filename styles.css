@@ -246,6 +246,19 @@
   background: rgba(50, 50, 60, 0.9);
 }
 
+.calendar-cell .course-item.ybc-event {
+    background: rgba(30, 144, 255, 0.85);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 4px;
+    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.12);
+}
+.calendar-cell .course-item.ybc-event:hover {
+    background: rgba(30, 144, 255, 0.95);
+    box-shadow: 0 2px 12px rgba(30, 144, 255, 0.18);
+}
+
 
 body {
     margin: 0;
@@ -538,3 +551,20 @@ a:hover {
     box-sizing: border-box;
     cursor: pointer;
 }
+
+/* Ajout pour course-item full-day */
+.course-item.full-day {
+    background: #ffd700;
+    color: #23272f;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 4px;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.12);
+}
+
+.course-item.full-day:hover {
+    background: #ffcc00;
+    box-shadow: 0 2px 12px rgba(255, 215, 0, 0.18);
+}
+
+/* End of responsive-div-table */
