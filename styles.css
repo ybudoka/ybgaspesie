@@ -247,16 +247,17 @@
 }
 
 .calendar-cell .course-item.ybc-event {
-    background: rgba(30, 144, 255, 0.85);
-    color: #fff;
+    background: linear-gradient(120deg, #2d3340 60%, #1e90ff 100%);
+    color: #ffd700;
     font-weight: bold;
     border-radius: 4px;
     padding: 2px 4px;
-    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.12);
+    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.10);
 }
 .calendar-cell .course-item.ybc-event:hover {
-    background: rgba(30, 144, 255, 0.95);
-    box-shadow: 0 2px 12px rgba(30, 144, 255, 0.18);
+    background: linear-gradient(120deg, #23272f 60%, #1e90ff 100%);
+    box-shadow: 0 2px 12px rgba(30, 144, 255, 0.16);
+    color: #ffec80;
 }
 
 
