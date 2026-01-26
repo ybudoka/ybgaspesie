@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://ybudoka.github.io/ybgaspesie/styles.css">
-    <script>function showCourseModal(nomCours, heures, lieu) {
+    <script>function showCourseModal(nomCours, heures, lieu, description) {
     // Remove any existing overlay/modal
     const oldOverlay = document.getElementById('modal-overlay');
     if (oldOverlay) oldOverlay.remove();
@@ -20,13 +20,16 @@
     // Create modal
     const modal = document.createElement('div');
     modal.className = 'modal-content';
-    modal.innerHTML =
-      '<button class="modal-close" id="modal-close-btn" title="Fermer">&times;</button>' +
+    let modalContent = '<button class="modal-close" id="modal-close-btn" title="Fermer">&times;</button>' +
       '<div>' +
         '<h2>' + nomCours + '</h2>' +
         '<p><strong>Heures :</strong> ' + heures + '</p>' +
-        '<p><strong>Lieu :</strong> ' + lieu + '</p>' +
-      '</div>';
+        '<p><strong>Lieu :</strong> ' + lieu + '</p>';
+    if (description && description.trim() !== '') {
+      modalContent += '<p><strong>Description :</strong> ' + description + '</p>';
+    }
+    modalContent += '</div>';
+    modal.innerHTML = modalContent;
 
     // Close modal on click anywhere on overlay
     overlay.addEventListener('click', function() {
@@ -80,124 +83,117 @@
         <div>V</div>
         <div>S</div>
       </div><div class="calendar-grid"><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell"><div class="day-no">1</div></div><div class="calendar-cell"><div class="day-no">2</div></div><div class="calendar-cell"><div class="day-no">3</div></div><div class="calendar-cell"><div class="day-no">4</div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell"><div class="day-no">6</div></div><div class="calendar-cell"><div class="day-no">7</div></div><div class="calendar-cell"><div class="day-no">8</div></div><div class="calendar-cell"><div class="day-no">9</div></div><div class="calendar-cell"><div class="day-no">10</div></div><div class="calendar-cell"><div class="day-no">11</div></div><div class="calendar-cell"><div class="day-no">12</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">13</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">14</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">15</div></div><div class="calendar-cell"><div class="day-no">16</div></div><div class="calendar-cell"><div class="day-no">17</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">18</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '14:30 - 16:30', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '14:30 - 16:30', '', '')">
                 Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R<br>
                 <div class="course-hours">14:30 - 16:30</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">19</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">20</div><div class="course-list">
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans) (ANNULÉ)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
-                <span class="cancelled-hours">17:30 - 18:15</span>
-                <span class="cancelled-badge">ANNULÉ</span>
-                </div>
-              
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans) (ANNULÉ)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Yoseikan Budo (8 &agrave; 12 ans)<br>
-                <span class="cancelled-hours">18:30 - 19:30</span>
-                <span class="cancelled-badge">ANNULÉ</span>
+                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Annulé - Cours repris en fin de session : Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '', '', '')">
+                <span class="cancelled-label">Annulé</span> Cours repris en fin de session : Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
+                
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">21</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">22</div></div><div class="calendar-cell"><div class="day-no">23</div></div><div class="calendar-cell"><div class="day-no">24</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">25</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage YB #3 | Dojo St-&Eacute;tienne', '14:00 - 17:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage YB #3 | Dojo St-&Eacute;tienne', '14:00 - 17:00', '', '')">
                 Stage YB #3 | Dojo St-&Eacute;tienne<br>
                 <div class="course-hours">14:00 - 17:00</div>
                 </div>
               
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage kobudo #3', '18:00 - 20:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage kobudo #3', '18:00 - 20:00', '', '')">
                 Stage kobudo #3<br>
                 <div class="course-hours">18:00 - 20:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">26</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">27</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">28</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">29</div></div><div class="calendar-cell"><div class="day-no">30</div></div><div class="calendar-cell"><div class="day-no">31</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
@@ -212,169 +208,162 @@
         <div>V</div>
         <div>S</div>
       </div><div class="calendar-grid"><div class="calendar-cell"><div class="day-no">1</div></div><div class="calendar-cell"><div class="day-no">2</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">3</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">4</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell"><div class="day-no">6</div></div><div class="calendar-cell"><div class="day-no">7</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">8</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition r&eacute;gionale T-R #2', '14:00 - 20:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition r&eacute;gionale T-R #2', '14:00 - 20:00', '', '')">
                 Comp&eacute;tition r&eacute;gionale T-R #2<br>
                 <div class="course-hours">14:00 - 20:00</div>
                 </div>
               
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition r&eacute;gionale #2 | Qu&eacute;bec', '14:00 - 21:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition r&eacute;gionale #2 | Qu&eacute;bec', '14:00 - 21:00', '', '')">
                 Comp&eacute;tition r&eacute;gionale #2 | Qu&eacute;bec<br>
                 <div class="course-hours">14:00 - 21:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">9</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">10</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">11</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">12</div></div><div class="calendar-cell"><div class="day-no">13</div></div><div class="calendar-cell"><div class="day-no">14</div><div class="course-list">
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans) (ANNULÉ)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
-                <span class="cancelled-hours">09:00 - 09:45</span>
-                <span class="cancelled-badge">ANNULÉ</span>
-                </div>
-              
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans) (ANNULÉ)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
-                <span class="cancelled-hours">10:00 - 10:45</span>
-                <span class="cancelled-badge">ANNULÉ</span>
+                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Annulé - Cours repris en fin de session : Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '', '', '')">
+                <span class="cancelled-label">Annulé</span> Cours repris en fin de session : Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
+                
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">15</div></div><div class="calendar-cell"><div class="day-no">16</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">17</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">18</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">19</div></div><div class="calendar-cell"><div class="day-no">20</div></div><div class="calendar-cell"><div class="day-no">21</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">22</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '14:00 - 16:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '14:00 - 16:00', '', '')">
                 Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R<br>
                 <div class="course-hours">14:00 - 16:00</div>
                 </div>
               
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('CNYB | Stage YB #4', '14:00 - 17:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('CNYB | Stage YB #4', '14:00 - 17:00', '', '')">
                 CNYB | Stage YB #4<br>
                 <div class="course-hours">14:00 - 17:00</div>
                 </div>
               
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('CNYB | Stage kobudo #4', '18:00 - 20:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('CNYB | Stage kobudo #4', '18:00 - 20:00', '', '')">
                 CNYB | Stage kobudo #4<br>
                 <div class="course-hours">18:00 - 20:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">23</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">24</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">25</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">26</div></div><div class="calendar-cell"><div class="day-no">27</div></div><div class="calendar-cell"><div class="day-no">28</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
@@ -389,154 +378,157 @@
         <div>V</div>
         <div>S</div>
       </div><div class="calendar-grid"><div class="calendar-cell"><div class="day-no">1</div></div><div class="calendar-cell"><div class="day-no">2</div><div class="course-list">
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +) (ANNULÉ)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Yoseikan Cardio Boxe (13 ans +)<br>
-                <span class="cancelled-hours">18:00 - 18:45</span>
-                <span class="cancelled-badge">ANNULÉ</span>
-                </div>
-              
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +) (ANNULÉ)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Yoseikan Budo Traditionnel (13 ans +)<br>
-                <span class="cancelled-hours">19:00 - 20:30</span>
-                <span class="cancelled-badge">ANNULÉ</span>
+                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Annulé - Cours repris en fin de session : Yoseikan Cardio Boxe (13 ans +)', '', '', '')">
+                <span class="cancelled-label">Annulé</span> Cours repris en fin de session : Yoseikan Cardio Boxe (13 ans +)<br>
+                
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">3</div><div class="course-list">
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans) (ANNULÉ)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
-                <span class="cancelled-hours">17:30 - 18:15</span>
-                <span class="cancelled-badge">ANNULÉ</span>
-                </div>
-              
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans) (ANNULÉ)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Yoseikan Budo (8 &agrave; 12 ans)<br>
-                <span class="cancelled-hours">18:30 - 19:30</span>
-                <span class="cancelled-badge">ANNULÉ</span>
+                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Annulé - Cours repris en fin de session : Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '', '', '')">
+                <span class="cancelled-label">Annulé</span> Cours repris en fin de session : Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
+                
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">4</div><div class="course-list">
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +) (ANNULÉ)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Yoseikan Budo Technique (13 ans +)<br>
-                <span class="cancelled-hours">18:30 - 20:00</span>
-                <span class="cancelled-badge">ANNULÉ</span>
+                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Annulé - Cours repris en fin de session : Yoseikan Budo Technique (13 ans +)', '', '', '')">
+                <span class="cancelled-label">Annulé</span> Cours repris en fin de session : Yoseikan Budo Technique (13 ans +)<br>
+                
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell"><div class="day-no">6</div></div><div class="calendar-cell"><div class="day-no">7</div><div class="course-list">
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans) (ANNULÉ)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
-                <span class="cancelled-hours">09:00 - 09:45</span>
-                <span class="cancelled-badge">ANNULÉ</span>
-                </div>
-              
-                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans) (ANNULÉ)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
-                Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
-                <span class="cancelled-hours">10:00 - 10:45</span>
-                <span class="cancelled-badge">ANNULÉ</span>
+                <div class="course-item cancelled" style="position:relative; cursor:pointer;" onclick="showCourseModal('Annulé - Cours repris en fin de session : Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '', '', '')">
+                <span class="cancelled-label">Annulé</span> Cours repris en fin de session : Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
+                
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">8</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition provinciale YB #1', '13:00 - 20:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition provinciale YB #1', '13:00 - 20:00', '', '')">
                 Comp&eacute;tition provinciale YB #1<br>
                 <div class="course-hours">13:00 - 20:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">9</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">10</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">11</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">12</div></div><div class="calendar-cell"><div class="day-no">13</div></div><div class="calendar-cell"><div class="day-no">14</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Dojo Sorel', '13:30 - 15:30', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Dojo Sorel', '13:30 - 15:30', '', '')">
                 Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Dojo Sorel<br>
                 <div class="course-hours">13:30 - 15:30</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">15</div></div><div class="calendar-cell"><div class="day-no">16</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">17</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">18</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">19</div></div><div class="calendar-cell"><div class="day-no">20</div></div><div class="calendar-cell"><div class="day-no">21</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">22</div></div><div class="calendar-cell"><div class="day-no">23</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Yoseikan Cardio Boxe (13 ans +)<br>
+                </div>
+                <div class="course-hours">18:00 - 18:45</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">24</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
+                </div>
+                <div class="course-hours">17:30 - 18:15</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">25</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
-              </div></div><div class="calendar-cell"><div class="day-no">26</div></div><div class="calendar-cell"><div class="day-no">27</div></div><div class="calendar-cell"><div class="day-no">28</div></div><div class="calendar-cell"><div class="day-no">29</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition provinciale YB #2', '12:00 - 20:00', '')">
+              </div></div><div class="calendar-cell"><div class="day-no">26</div></div><div class="calendar-cell"><div class="day-no">27</div></div><div class="calendar-cell"><div class="day-no">28</div><div class="course-list">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
+                </div>
+                <div class="course-hours">09:00 - 09:45</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
+                </div>
+                <div class="course-hours">10:00 - 10:45</div>
+              </div></div><div class="calendar-cell"><div class="day-no">29</div><div class="course-list">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition provinciale YB #2', '12:00 - 20:00', '', '')">
                 Comp&eacute;tition provinciale YB #2<br>
                 <div class="course-hours">12:00 - 20:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">30</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">31</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
+                </div>
+                <div class="course-hours">17:30 - 18:15</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
@@ -551,137 +543,167 @@
         <div>V</div>
         <div>S</div>
       </div><div class="calendar-grid"><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell"><div class="day-no">1</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
-              </div></div><div class="calendar-cell"><div class="day-no">2</div></div><div class="calendar-cell"><div class="day-no">3</div></div><div class="calendar-cell"><div class="day-no">4</div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell"><div class="day-no">6</div></div><div class="calendar-cell"><div class="day-no">7</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+              </div></div><div class="calendar-cell"><div class="day-no">2</div></div><div class="calendar-cell"><div class="day-no">3</div></div><div class="calendar-cell holiday-note"><div class="day-no">4</div><div class="holiday-name">Vendredi saint</div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell holiday-note"><div class="day-no">6</div><div class="holiday-name">Vendredi saint</div></div><div class="calendar-cell"><div class="day-no">7</div><div class="course-list">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Yoseikan Budo (8 &agrave; 12 ans)<br>
+                </div>
+                <div class="course-hours">18:30 - 19:30</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">8</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Yoseikan Budo Technique (13 ans +)<br>
+                </div>
+                <div class="course-hours">18:30 - 20:00</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">9</div></div><div class="calendar-cell"><div class="day-no">10</div></div><div class="calendar-cell"><div class="day-no">11</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
+                </div>
+                <div class="course-hours">09:00 - 09:45</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
+                </div>
+                <div class="course-hours">10:00 - 10:45</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">12</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition provinciale YB #3', '12:00 - 20:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Comp&eacute;tition provinciale YB #3', '12:00 - 20:00', '', '')">
                 Comp&eacute;tition provinciale YB #3<br>
                 <div class="course-hours">12:00 - 20:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">13</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Yoseikan Budo Traditionnel (13 ans +)<br>
+                </div>
+                <div class="course-hours">19:00 - 20:30</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">14</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
+                Yoseikan Budo (8 &agrave; 12 ans)<br>
+                </div>
+                <div class="course-hours">18:30 - 19:30</div>
+              
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">15</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">16</div></div><div class="calendar-cell"><div class="day-no">17</div></div><div class="calendar-cell"><div class="day-no">18</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">19</div></div><div class="calendar-cell"><div class="day-no">20</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">21</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">22</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">23</div></div><div class="calendar-cell"><div class="day-no">24</div></div><div class="calendar-cell"><div class="day-no">25</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">26</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '13:30 - 15:30', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '13:30 - 15:30', '', '')">
                 Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R<br>
                 <div class="course-hours">13:30 - 15:30</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">27</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">28</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">29</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
@@ -696,147 +718,147 @@
         <div>V</div>
         <div>S</div>
       </div><div class="calendar-grid"><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell"><div class="day-no">1</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage des jeunes samoura&iuml;s', '22:00 - 02:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage des jeunes samoura&iuml;s', '22:00 - 02:00', '', '')">
                 Stage des jeunes samoura&iuml;s<br>
                 <div class="course-hours">22:00 - 02:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">2</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)', '09:00 - 09:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (2 &agrave; 3,5 ans)<br>
                 </div>
                 <div class="course-hours">09:00 - 09:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)', '10:00 - 10:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Motricit&eacute; (MiniBudo) (3,5 &agrave; 5 ans)<br>
                 </div>
                 <div class="course-hours">10:00 - 10:45</div>
               
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage des jeunes samoura&iuml;s', '12:00 - 01:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage des jeunes samoura&iuml;s', '12:00 - 01:00', '', '')">
                 Stage des jeunes samoura&iuml;s<br>
                 <div class="course-hours">12:00 - 01:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">3</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage des jeunes samoura&iuml;s', '12:00 - 19:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage des jeunes samoura&iuml;s', '12:00 - 19:00', '', '')">
                 Stage des jeunes samoura&iuml;s<br>
                 <div class="course-hours">12:00 - 19:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">4</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">5</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">6</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">7</div></div><div class="calendar-cell"><div class="day-no">8</div></div><div class="calendar-cell"><div class="day-no">9</div></div><div class="calendar-cell"><div class="day-no">10</div></div><div class="calendar-cell"><div class="day-no">11</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">12</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">13</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">14</div></div><div class="calendar-cell"><div class="day-no">15</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 02:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 02:00', '', '')">
                 Stage national YB du printemps<br>
                 <div class="course-hours">13:00 - 02:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">16</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 20:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 20:00', '', '')">
                 Stage national YB du printemps<br>
                 <div class="course-hours">13:00 - 20:00</div>
                 </div>
               
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Souper et gala m&eacute;ritas', '22:00 - 02:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Souper et gala m&eacute;ritas', '22:00 - 02:00', '', '')">
                 Souper et gala m&eacute;ritas<br>
                 <div class="course-hours">22:00 - 02:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">17</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 20:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 20:00', '', '')">
                 Stage national YB du printemps<br>
                 <div class="course-hours">13:00 - 20:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">18</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 16:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Stage national YB du printemps', '13:00 - 16:00', '', '')">
                 Stage national YB du printemps<br>
                 <div class="course-hours">13:00 - 16:00</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">19</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">20</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">21</div></div><div class="calendar-cell"><div class="day-no">22</div></div><div class="calendar-cell"><div class="day-no">23</div></div><div class="calendar-cell"><div class="day-no">24</div></div><div class="calendar-cell"><div class="day-no">25</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">26</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Initiation au Yoseikan Budo (6 &agrave; 7 ans)', '17:30 - 18:15', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Initiation au Yoseikan Budo (6 &agrave; 7 ans)<br>
                 </div>
                 <div class="course-hours">17:30 - 18:15</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo (8 &agrave; 12 ans)', '18:30 - 19:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo (8 &agrave; 12 ans)<br>
                 </div>
                 <div class="course-hours">18:30 - 19:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">27</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Technique (13 ans +)', '18:30 - 20:00', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
               </div></div><div class="calendar-cell"><div class="day-no">28</div></div><div class="calendar-cell"><div class="day-no">29</div></div><div class="calendar-cell"><div class="day-no">30</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('25e anniversaire du dojo St-&Eacute;tienne', '16:00 - 21:00', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('25e anniversaire du dojo St-&Eacute;tienne', '16:00 - 21:00', '', '')">
                 25e anniversaire du dojo St-&Eacute;tienne<br>
                 <div class="course-hours">16:00 - 21:00</div>
                 </div>
@@ -851,37 +873,37 @@
         <div>V</div>
         <div>S</div>
       </div><div class="calendar-grid"><div class="calendar-cell empty"></div><div class="calendar-cell"><div class="day-no">1</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">2</div></div><div class="calendar-cell"><div class="day-no">3</div></div><div class="calendar-cell"><div class="day-no">4</div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell"><div class="day-no">6</div></div><div class="calendar-cell"><div class="day-no">7</div><div class="course-list">
-                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '13:30 - 15:30', '')">
+                <div class="course-item ybc-event" style="position:relative; cursor:pointer;" onclick="showCourseModal('Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R', '13:30 - 15:30', '', '')">
                 Entra&icirc;nement de l'&eacute;quipe de comp&eacute;tition | Centre National T-R<br>
                 <div class="course-hours">13:30 - 15:30</div>
                 </div>
               </div></div><div class="calendar-cell"><div class="day-no">8</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Budo Traditionnel (13 ans +)', '19:00 - 20:30', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
               </div></div><div class="calendar-cell"><div class="day-no">9</div></div><div class="calendar-cell"><div class="day-no">10</div></div><div class="calendar-cell"><div class="day-no">11</div></div><div class="calendar-cell"><div class="day-no">12</div></div><div class="calendar-cell"><div class="day-no">13</div></div><div class="calendar-cell"><div class="day-no">14</div></div><div class="calendar-cell"><div class="day-no">15</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
               </div></div><div class="calendar-cell"><div class="day-no">16</div></div><div class="calendar-cell"><div class="day-no">17</div></div><div class="calendar-cell"><div class="day-no">18</div></div><div class="calendar-cell"><div class="day-no">19</div></div><div class="calendar-cell"><div class="day-no">20</div></div><div class="calendar-cell"><div class="day-no">21</div></div><div class="calendar-cell"><div class="day-no">22</div><div class="course-list">
-                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada')">
+                <div class="course-item" style="position:relative; cursor:pointer;" onclick="showCourseModal('Yoseikan Cardio Boxe (13 ans +)', '18:00 - 18:45', '124 1re Avenue Ouest, Sainte-Anne-des-Monts QC G4V 1C5, Canada', '')">
                 Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:00 - 18:45</div>
