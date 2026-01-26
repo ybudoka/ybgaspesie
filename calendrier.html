@@ -20,12 +20,20 @@
     // Create modal
     const modal = document.createElement('div');
     modal.className = 'modal-content';
+    const hasHeures = heures && heures.trim() !== '' && heures !== 'undefined';
+    const hasLieu = lieu && lieu.trim() !== '' && lieu !== 'undefined';
+    const hasDescription = description && description.trim() !== '' && description !== 'undefined';
+
     let modalContent = '<button class="modal-close" id="modal-close-btn" title="Fermer">&times;</button>' +
       '<div>' +
-        '<h2>' + nomCours + '</h2>' +
-        '<p><strong>Heures :</strong> ' + heures + '</p>' +
-        '<p><strong>Lieu :</strong> ' + lieu + '</p>';
-    if (description && description.trim() !== '') {
+        '<h2>' + nomCours + '</h2>';
+    if (hasHeures) {
+      modalContent += '<p><strong>Heures :</strong> ' + heures + '</p>';
+    }
+    if (hasLieu) {
+      modalContent += '<p><strong>Lieu :</strong> ' + lieu + '</p>';
+    }
+    if (hasDescription) {
       modalContent += '<p><strong>Description :</strong> ' + description + '</p>';
     }
     modalContent += '</div>';
