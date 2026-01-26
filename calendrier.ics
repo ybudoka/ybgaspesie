@@ -24,1259 +24,1614 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:20260112T050000-hiver2026-mkvnu7vg@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260112T050000-hiver2026-mkvqrs2t@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Hiver 2026
 DTSTART;TZID=America/New_York:20260112T000000
 DTEND;TZID=America/New_York:20260112T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260112T230000-yoseikancardioboxe13ans-mkvnu9fq@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260112T230000-yoseikancardioboxe13ans-mkvqrs4h@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260112T180000
 DTEND;TZID=America/New_York:20260112T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260113T000000-yoseikanbudotraditionnel13ans-mkvnuccs@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260113T000000-yoseikanbudotraditionnel13ans-mkvqrs69@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260112T190000
 DTEND;TZID=America/New_York:20260112T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260113T050000-hiver2026-mkvnufod@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260113T050000-hiver2026-mkvqrs85@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Hiver 2026
 DTSTART;TZID=America/New_York:20260113T000000
 DTEND;TZID=America/New_York:20260113T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260113T223000-initiationauyoseikanbudo67ans-mkvnugcd@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260113T223000-initiationauyoseikanbudo67ans-mkvqrsab@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260113T173000
 DTEND;TZID=America/New_York:20260113T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260113T233000-yoseikanbudo812ans-mkvnuitk@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260113T233000-yoseikanbudo812ans-mkvqrsd7@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260113T183000
 DTEND;TZID=America/New_York:20260113T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260114T050000-hiver2026-mkvnullf@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260114T050000-hiver2026-mkvqrsg0@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Hiver 2026
 DTSTART;TZID=America/New_York:20260114T000000
 DTEND;TZID=America/New_York:20260114T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260114T233000-yoseikanbudotechnique13ans-mkvnum7o@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260114T233000-yoseikanbudotechnique13ans-mkvqrshz@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260114T183000
 DTEND;TZID=America/New_York:20260114T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260117T050000-hiver2026-mkvnuobt@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260117T050000-hiver2026-mkvqrsjv@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Hiver 2026
 DTSTART;TZID=America/New_York:20260117T000000
 DTEND;TZID=America/New_York:20260117T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260117T140000-motricitminibudo235ans-mkvnup12@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260117T140000-motricitminibudo235ans-mkvqrsma@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260117T090000
 DTEND;TZID=America/New_York:20260117T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260117T150000-motricitminibudo355ans-mkvnurpt@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260117T150000-motricitminibudo355ans-mkvqrso5@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260117T100000
 DTEND;TZID=America/New_York:20260117T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260118T193000-entranementdelquipedecomptitioncentrenationaltr-mkvnuu24@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260118T193000-entranementdelquipedecomptitioncentrenationaltr-mkvqrsqe@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Entraînement de l'équipe de compétition | Centre National T-R
 DTSTART;TZID=America/New_York:20260118T143000
 DTEND;TZID=America/New_York:20260118T163000
+DESCRIPTION:Heures: 14:30 - 16:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260119T230000-yoseikancardioboxe13ans-mkvnuuo3@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260119T230000-yoseikancardioboxe13ans-mkvqrssp@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260119T180000
 DTEND;TZID=America/New_York:20260119T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260120T000000-yoseikanbudotraditionnel13ans-mkvnuuxj@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260120T000000-yoseikanbudotraditionnel13ans-mkvqrsul@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260119T190000
 DTEND;TZID=America/New_York:20260119T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260120T223000-initiationauyoseikanbudo67ans-mkvnuv6d@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
-DTSTART;TZID=America/New_York:20260120T173000
+UID:20260120T050000-coursreprisenfindesessioninitiationauyoseikanbudo67ans-mkvqrswz@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Cours repris en fin de session : Initiation au Yoseikan Budo (6 à 7 ans)
+DTSTART;TZID=America/New_York:20260120T000000
 DTEND;TZID=America/New_York:20260120T181500
-STATUS:CANCELLED
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260120T233000-yoseikanbudo812ans-mkvnuvf3@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Yoseikan Budo (8 à 12 ans)
-DTSTART;TZID=America/New_York:20260120T183000
-DTEND;TZID=America/New_York:20260120T193000
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
-UID:20260121T233000-yoseikanbudotechnique13ans-mkvnuvmw@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260121T233000-yoseikanbudotechnique13ans-mkvqrsxw@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260121T183000
 DTEND;TZID=America/New_York:20260121T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260124T140000-motricitminibudo235ans-mkvnuvwc@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260124T140000-motricitminibudo235ans-mkvqrt0a@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260124T090000
 DTEND;TZID=America/New_York:20260124T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260124T150000-motricitminibudo355ans-mkvnuw5o@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260124T150000-motricitminibudo355ans-mkvqrt72@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260124T100000
 DTEND;TZID=America/New_York:20260124T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260125T190000-stageyb3dojosttienne-mkvnuwk8@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260125T190000-stageyb3dojosttienne-mkvqrt9c@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage YB #3 | Dojo St-Étienne
 DTSTART;TZID=America/New_York:20260125T140000
 DTEND;TZID=America/New_York:20260125T170000
+DESCRIPTION:Heures: 14:00 - 17:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260125T230000-stagekobudo3-mkvnuxk2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260125T230000-stagekobudo3-mkvqrtbx@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage kobudo #3
 DTSTART;TZID=America/New_York:20260125T180000
 DTEND;TZID=America/New_York:20260125T200000
+DESCRIPTION:Heures: 18:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260126T230000-yoseikancardioboxe13ans-mkvnuy8b@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260126T230000-yoseikancardioboxe13ans-mkvqrten@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260126T180000
 DTEND;TZID=America/New_York:20260126T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260127T000000-yoseikanbudotraditionnel13ans-mkvnuygt@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260127T000000-yoseikanbudotraditionnel13ans-mkvqrthq@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260126T190000
 DTEND;TZID=America/New_York:20260126T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260127T223000-initiationauyoseikanbudo67ans-mkvnuyqk@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260127T223000-initiationauyoseikanbudo67ans-mkvqrtkl@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260127T173000
 DTEND;TZID=America/New_York:20260127T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260127T233000-yoseikanbudo812ans-mkvnuz0v@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260127T233000-yoseikanbudo812ans-mkvqrtoa@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260127T183000
 DTEND;TZID=America/New_York:20260127T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260128T233000-yoseikanbudotechnique13ans-mkvnuza0@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260128T233000-yoseikanbudotechnique13ans-mkvqrtqx@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260128T183000
 DTEND;TZID=America/New_York:20260128T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260131T140000-motricitminibudo235ans-mkvnuzkv@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260131T140000-motricitminibudo235ans-mkvqrttb@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260131T090000
 DTEND;TZID=America/New_York:20260131T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260131T150000-motricitminibudo355ans-mkvnuzux@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260131T150000-motricitminibudo355ans-mkvqrtva@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260131T100000
 DTEND;TZID=America/New_York:20260131T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260202T230000-yoseikancardioboxe13ans-mkvnv048@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260202T230000-yoseikancardioboxe13ans-mkvqrtxv@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260202T180000
 DTEND;TZID=America/New_York:20260202T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260203T000000-yoseikanbudotraditionnel13ans-mkvnv0cw@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260203T000000-yoseikanbudotraditionnel13ans-mkvqrtzo@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260202T190000
 DTEND;TZID=America/New_York:20260202T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260203T223000-initiationauyoseikanbudo67ans-mkvnv0mm@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260203T223000-initiationauyoseikanbudo67ans-mkvqru2b@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260203T173000
 DTEND;TZID=America/New_York:20260203T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260203T233000-yoseikanbudo812ans-mkvnv0vd@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260203T233000-yoseikanbudo812ans-mkvqru59@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260203T183000
 DTEND;TZID=America/New_York:20260203T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260204T233000-yoseikanbudotechnique13ans-mkvnv15q@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260204T233000-yoseikanbudotechnique13ans-mkvqru94@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260204T183000
 DTEND;TZID=America/New_York:20260204T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260207T140000-motricitminibudo235ans-mkvnv1f9@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260207T140000-motricitminibudo235ans-mkvqruej@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260207T090000
 DTEND;TZID=America/New_York:20260207T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260207T150000-motricitminibudo355ans-mkvnv1ny@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260207T150000-motricitminibudo355ans-mkvqruh2@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260207T100000
 DTEND;TZID=America/New_York:20260207T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260208T190000-comptitionrgionaletr2-mkvnv1yi@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260208T190000-comptitionrgionaletr2-mkvqrujf@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Compétition régionale T-R #2
 DTSTART;TZID=America/New_York:20260208T140000
 DTEND;TZID=America/New_York:20260208T200000
+DESCRIPTION:Heures: 14:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260208T190000-comptitionrgionale2qubec-mkvnv2o6@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260208T190000-comptitionrgionale2qubec-mkvqrulk@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Compétition régionale #2 | Québec
 DTSTART;TZID=America/New_York:20260208T140000
 DTEND;TZID=America/New_York:20260208T210000
+DESCRIPTION:Heures: 14:00 - 21:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260209T230000-yoseikancardioboxe13ans-mkvnv3as@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260209T230000-yoseikancardioboxe13ans-mkvqrunn@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260209T180000
 DTEND;TZID=America/New_York:20260209T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260210T000000-yoseikanbudotraditionnel13ans-mkvnv3ky@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260210T000000-yoseikanbudotraditionnel13ans-mkvqrupx@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260209T190000
 DTEND;TZID=America/New_York:20260209T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260210T223000-initiationauyoseikanbudo67ans-mkvnv3uw@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260210T223000-initiationauyoseikanbudo67ans-mkvqrurr@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260210T173000
 DTEND;TZID=America/New_York:20260210T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260210T233000-yoseikanbudo812ans-mkvnv44i@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260210T233000-yoseikanbudo812ans-mkvqrutv@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260210T183000
 DTEND;TZID=America/New_York:20260210T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260211T233000-yoseikanbudotechnique13ans-mkvnv4dl@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260211T233000-yoseikanbudotechnique13ans-mkvqruvz@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260211T183000
 DTEND;TZID=America/New_York:20260211T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260214T140000-motricitminibudo235ans-mkvnv4nl@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
-DTSTART;TZID=America/New_York:20260214T090000
+UID:20260214T050000-coursreprisenfindesessionmotricitminibudo235ans-mkvqruy2@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Cours repris en fin de session : Motricité (MiniBudo) (2 à 3\,5 ans)
+DTSTART;TZID=America/New_York:20260214T000000
 DTEND;TZID=America/New_York:20260214T094500
-STATUS:CANCELLED
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260214T150000-motricitminibudo355ans-mkvnv4xa@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
-DTSTART;TZID=America/New_York:20260214T100000
-DTEND;TZID=America/New_York:20260214T104500
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
-UID:20260216T230000-yoseikancardioboxe13ans-mkvnv56c@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260216T230000-yoseikancardioboxe13ans-mkvqruyy@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260216T180000
 DTEND;TZID=America/New_York:20260216T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260217T000000-yoseikanbudotraditionnel13ans-mkvnv5fe@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260217T000000-yoseikanbudotraditionnel13ans-mkvqrv0p@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260216T190000
 DTEND;TZID=America/New_York:20260216T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260217T223000-initiationauyoseikanbudo67ans-mkvnv5pb@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260217T223000-initiationauyoseikanbudo67ans-mkvqrv32@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260217T173000
 DTEND;TZID=America/New_York:20260217T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260217T233000-yoseikanbudo812ans-mkvnv5z9@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260217T233000-yoseikanbudo812ans-mkvqrv54@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260217T183000
 DTEND;TZID=America/New_York:20260217T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260218T233000-yoseikanbudotechnique13ans-mkvnv68x@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260218T233000-yoseikanbudotechnique13ans-mkvqrv7g@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260218T183000
 DTEND;TZID=America/New_York:20260218T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260221T140000-motricitminibudo235ans-mkvnv6i2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260221T140000-motricitminibudo235ans-mkvqrv9q@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260221T090000
 DTEND;TZID=America/New_York:20260221T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260221T150000-motricitminibudo355ans-mkvnv6rz@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260221T150000-motricitminibudo355ans-mkvqrvca@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260221T100000
 DTEND;TZID=America/New_York:20260221T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260222T190000-entranementdelquipedecomptitioncentrenationaltr-mkvnv71s@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260222T190000-entranementdelquipedecomptitioncentrenationaltr-mkvqrvej@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Entraînement de l'équipe de compétition | Centre National T-R
 DTSTART;TZID=America/New_York:20260222T140000
 DTEND;TZID=America/New_York:20260222T160000
+DESCRIPTION:Heures: 14:00 - 16:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260222T190000-cnybstageyb4-mkvnv7r1@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260222T190000-cnybstageyb4-mkvqrvh1@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:CNYB | Stage YB #4
 DTSTART;TZID=America/New_York:20260222T140000
 DTEND;TZID=America/New_York:20260222T170000
+DESCRIPTION:Heures: 14:00 - 17:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260222T230000-cnybstagekobudo4-mkvnv8cq@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260222T230000-cnybstagekobudo4-mkvqrvkd@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:CNYB | Stage kobudo #4
 DTSTART;TZID=America/New_York:20260222T180000
 DTEND;TZID=America/New_York:20260222T200000
+DESCRIPTION:Heures: 18:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260223T230000-yoseikancardioboxe13ans-mkvnv8zy@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260223T230000-yoseikancardioboxe13ans-mkvqrvm0@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260223T180000
 DTEND;TZID=America/New_York:20260223T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260224T000000-yoseikanbudotraditionnel13ans-mkvnv98w@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260224T000000-yoseikanbudotraditionnel13ans-mkvqrvo0@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260223T190000
 DTEND;TZID=America/New_York:20260223T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260224T223000-initiationauyoseikanbudo67ans-mkvnv9ir@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260224T223000-initiationauyoseikanbudo67ans-mkvqrvpu@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260224T173000
 DTEND;TZID=America/New_York:20260224T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260224T233000-yoseikanbudo812ans-mkvnv9tn@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260224T233000-yoseikanbudo812ans-mkvqrvru@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260224T183000
 DTEND;TZID=America/New_York:20260224T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260225T233000-yoseikanbudotechnique13ans-mkvnva46@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260225T233000-yoseikanbudotechnique13ans-mkvqrvus@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260225T183000
 DTEND;TZID=America/New_York:20260225T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260228T140000-motricitminibudo235ans-mkvnvaf8@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260228T140000-motricitminibudo235ans-mkvqrvxd@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260228T090000
 DTEND;TZID=America/New_York:20260228T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260228T150000-motricitminibudo355ans-mkvnvao3@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260228T150000-motricitminibudo355ans-mkvqrvzv@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260228T100000
 DTEND;TZID=America/New_York:20260228T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260302T230000-yoseikancardioboxe13ans-mkvnvawp@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Yoseikan Cardio Boxe (13 ans +)
-DTSTART;TZID=America/New_York:20260302T180000
+UID:20260302T050000-coursreprisenfindesessionyoseikancardioboxe13ans-mkvqrw1n@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Cours repris en fin de session : Yoseikan Cardio Boxe (13 ans +)
+DTSTART;TZID=America/New_York:20260302T000000
 DTEND;TZID=America/New_York:20260302T184500
-STATUS:CANCELLED
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260303T000000-yoseikanbudotraditionnel13ans-mkvnvb66@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
-DTSTART;TZID=America/New_York:20260302T190000
-DTEND;TZID=America/New_York:20260302T203000
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
-UID:20260303T223000-initiationauyoseikanbudo67ans-mkvnvbfv@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
-DTSTART;TZID=America/New_York:20260303T173000
+UID:20260303T050000-coursreprisenfindesessioninitiationauyoseikanbudo67ans-mkvqrw2i@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Cours repris en fin de session : Initiation au Yoseikan Budo (6 à 7 ans)
+DTSTART;TZID=America/New_York:20260303T000000
 DTEND;TZID=America/New_York:20260303T181500
-STATUS:CANCELLED
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260303T233000-yoseikanbudo812ans-mkvnvbpr@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Yoseikan Budo (8 à 12 ans)
-DTSTART;TZID=America/New_York:20260303T183000
-DTEND;TZID=America/New_York:20260303T193000
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
-UID:20260304T233000-yoseikanbudotechnique13ans-mkvnvc38@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Yoseikan Budo Technique (13 ans +)
-DTSTART;TZID=America/New_York:20260304T183000
+UID:20260304T050000-coursreprisenfindesessionyoseikanbudotechnique13ans-mkvqrw39@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Cours repris en fin de session : Yoseikan Budo Technique (13 ans +)
+DTSTART;TZID=America/New_York:20260304T000000
 DTEND;TZID=America/New_York:20260304T200000
-STATUS:CANCELLED
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260307T140000-motricitminibudo235ans-mkvnvce4@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
-DTSTART;TZID=America/New_York:20260307T090000
+UID:20260307T050000-coursreprisenfindesessionmotricitminibudo235ans-mkvqrw4c@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Cours repris en fin de session : Motricité (MiniBudo) (2 à 3\,5 ans)
+DTSTART;TZID=America/New_York:20260307T000000
 DTEND;TZID=America/New_York:20260307T094500
-STATUS:CANCELLED
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260307T150000-motricitminibudo355ans-mkvnvcqe@ybgaspesie.ca
-DTSTAMP:20260126T210909
-SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
-DTSTART;TZID=America/New_York:20260307T100000
-DTEND;TZID=America/New_York:20260307T104500
-STATUS:CANCELLED
-END:VEVENT
-BEGIN:VEVENT
-UID:20260308T170000-comptitionprovincialeyb1-mkvnvd42@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260308T170000-comptitionprovincialeyb1-mkvqrw5i@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Compétition provinciale YB #1
 DTSTART;TZID=America/New_York:20260308T130000
 DTEND;TZID=America/New_York:20260308T200000
+DESCRIPTION:Heures: 13:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260309T220000-yoseikancardioboxe13ans-mkvnvdsq@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260309T220000-yoseikancardioboxe13ans-mkvqrw89@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260309T180000
 DTEND;TZID=America/New_York:20260309T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260309T230000-yoseikanbudotraditionnel13ans-mkvnve1o@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260309T230000-yoseikanbudotraditionnel13ans-mkvqrwaj@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260309T190000
 DTEND;TZID=America/New_York:20260309T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260310T213000-initiationauyoseikanbudo67ans-mkvnveaw@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260310T213000-initiationauyoseikanbudo67ans-mkvqrwdi@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260310T173000
 DTEND;TZID=America/New_York:20260310T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260310T223000-yoseikanbudo812ans-mkvnvem0@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260310T223000-yoseikanbudo812ans-mkvqrwgh@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260310T183000
 DTEND;TZID=America/New_York:20260310T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260311T223000-yoseikanbudotechnique13ans-mkvnvexc@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260311T223000-yoseikanbudotechnique13ans-mkvqrwiy@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260311T183000
 DTEND;TZID=America/New_York:20260311T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260314T130000-motricitminibudo235ans-mkvnvf9t@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260314T130000-motricitminibudo235ans-mkvqrwlx@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260314T090000
 DTEND;TZID=America/New_York:20260314T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260314T140000-motricitminibudo355ans-mkvnvfjm@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260314T140000-motricitminibudo355ans-mkvqrwnz@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260314T100000
 DTEND;TZID=America/New_York:20260314T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260314T173000-entranementdelquipedecomptitiondojosorel-mkvnvfsz@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260314T173000-entranementdelquipedecomptitiondojosorel-mkvqrwps@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Entraînement de l'équipe de compétition | Dojo Sorel
 DTSTART;TZID=America/New_York:20260314T133000
 DTEND;TZID=America/New_York:20260314T153000
+DESCRIPTION:Heures: 13:30 - 15:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260316T220000-yoseikancardioboxe13ans-mkvnvgfz@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260316T220000-yoseikancardioboxe13ans-mkvqrwsk@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260316T180000
 DTEND;TZID=America/New_York:20260316T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260316T230000-yoseikanbudotraditionnel13ans-mkvnvgtb@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260316T230000-yoseikanbudotraditionnel13ans-mkvqrwv8@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260316T190000
 DTEND;TZID=America/New_York:20260316T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260317T213000-initiationauyoseikanbudo67ans-mkvnvh1z@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260317T213000-initiationauyoseikanbudo67ans-mkvqrwyg@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260317T173000
 DTEND;TZID=America/New_York:20260317T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260317T223000-yoseikanbudo812ans-mkvnvhas@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260317T223000-yoseikanbudo812ans-mkvqrx2o@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260317T183000
 DTEND;TZID=America/New_York:20260317T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260318T223000-yoseikanbudotechnique13ans-mkvnvhjq@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260318T223000-yoseikanbudotechnique13ans-mkvqrx5d@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260318T183000
 DTEND;TZID=America/New_York:20260318T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260321T130000-motricitminibudo235ans-mkvnvhsu@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260321T130000-motricitminibudo235ans-mkvqrx7p@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260321T090000
 DTEND;TZID=America/New_York:20260321T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260321T140000-motricitminibudo355ans-mkvnvi1r@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260321T140000-motricitminibudo355ans-mkvqrx9p@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260321T100000
 DTEND;TZID=America/New_York:20260321T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260323T230000-yoseikanbudotraditionnel13ans-mkvnviaf@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260323T220000-yoseikancardioboxe13ans-mkvqrxbj@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Yoseikan Cardio Boxe (13 ans +)
+DTSTART;TZID=America/New_York:20260323T180000
+DTEND;TZID=America/New_York:20260323T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260323T230000-yoseikanbudotraditionnel13ans-mkvqrxi1@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260323T190000
 DTEND;TZID=America/New_York:20260323T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260324T223000-yoseikanbudo812ans-mkvnvikb@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260324T213000-initiationauyoseikanbudo67ans-mkvqrxkm@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
+DTSTART;TZID=America/New_York:20260324T173000
+DTEND;TZID=America/New_York:20260324T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260324T223000-yoseikanbudo812ans-mkvqrxpp@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260324T183000
 DTEND;TZID=America/New_York:20260324T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260325T223000-yoseikanbudotechnique13ans-mkvnvitt@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260325T223000-yoseikanbudotechnique13ans-mkvqrxs8@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260325T183000
 DTEND;TZID=America/New_York:20260325T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260329T160000-comptitionprovincialeyb2-mkvnvj2t@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260328T130000-motricitminibudo235ans-mkvqrxv9@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
+DTSTART;TZID=America/New_York:20260328T090000
+DTEND;TZID=America/New_York:20260328T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260328T140000-motricitminibudo355ans-mkvqry09@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
+DTSTART;TZID=America/New_York:20260328T100000
+DTEND;TZID=America/New_York:20260328T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260329T160000-comptitionprovincialeyb2-mkvqry4p@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Compétition provinciale YB #2
 DTSTART;TZID=America/New_York:20260329T120000
 DTEND;TZID=America/New_York:20260329T200000
+DESCRIPTION:Heures: 12:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260330T230000-yoseikanbudotraditionnel13ans-mkvnvko0@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260330T230000-yoseikanbudotraditionnel13ans-mkvqry64@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260330T190000
 DTEND;TZID=America/New_York:20260330T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260331T223000-yoseikanbudo812ans-mkvnvkyd@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260331T213000-initiationauyoseikanbudo67ans-mkvqry8c@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
+DTSTART;TZID=America/New_York:20260331T173000
+DTEND;TZID=America/New_York:20260331T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260331T223000-yoseikanbudo812ans-mkvqrydi@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260331T183000
 DTEND;TZID=America/New_York:20260331T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260401T223000-yoseikanbudotechnique13ans-mkvnvl7z@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260401T223000-yoseikanbudotechnique13ans-mkvqryfz@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260401T183000
 DTEND;TZID=America/New_York:20260401T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260407T040000-printemps2026-mkvnvlgd@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260404T040000-vendredisaint-mkvqryhu@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Vendredi saint
+DTSTART;TZID=America/New_York:20260404T000000
+DTEND;TZID=America/New_York:20260404T094500
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260406T040000-vendredisaint-mkvqryiq@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Vendredi saint
+DTSTART;TZID=America/New_York:20260406T000000
+DTEND;TZID=America/New_York:20260406T203000
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260407T040000-printemps2026-mkvqryji@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Printemps 2026
 DTSTART;TZID=America/New_York:20260407T000000
 DTEND;TZID=America/New_York:20260407T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260407T213000-initiationauyoseikanbudo67ans-mkvnvm3x@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260407T213000-initiationauyoseikanbudo67ans-mkvqrylx@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260407T173000
 DTEND;TZID=America/New_York:20260407T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260407T223000-yoseikanbudo812ans-mkvnvmdf@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260407T223000-yoseikanbudo812ans-mkvqryon@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260407T183000
 DTEND;TZID=America/New_York:20260407T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260408T040000-printemps2026-mkvnvmmt@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260407T223000-yoseikanbudo812ans-mkvqryqy@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Yoseikan Budo (8 à 12 ans)
+DTSTART;TZID=America/New_York:20260407T183000
+DTEND;TZID=America/New_York:20260407T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260408T040000-printemps2026-mkvqrytu@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Printemps 2026
 DTSTART;TZID=America/New_York:20260408T000000
 DTEND;TZID=America/New_York:20260408T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260408T223000-yoseikanbudotechnique13ans-mkvnvnmn@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260408T223000-yoseikanbudotechnique13ans-mkvqryvn@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260408T183000
 DTEND;TZID=America/New_York:20260408T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260411T040000-printemps2026-mkvnvnvp@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260408T223000-yoseikanbudotechnique13ans-mkvqryxh@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Yoseikan Budo Technique (13 ans +)
+DTSTART;TZID=America/New_York:20260408T183000
+DTEND;TZID=America/New_York:20260408T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260411T040000-printemps2026-mkvqrz09@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Printemps 2026
 DTSTART;TZID=America/New_York:20260411T000000
 DTEND;TZID=America/New_York:20260411T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260411T130000-motricitminibudo235ans-mkvnvoio@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260411T130000-motricitminibudo235ans-mkvqrz2b@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260411T090000
 DTEND;TZID=America/New_York:20260411T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260411T140000-motricitminibudo355ans-mkvnvoru@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260411T130000-motricitminibudo235ans-mkvqrz47@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
+DTSTART;TZID=America/New_York:20260411T090000
+DTEND;TZID=America/New_York:20260411T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260411T140000-motricitminibudo355ans-mkvqrz6y@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260411T100000
 DTEND;TZID=America/New_York:20260411T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260412T160000-comptitionprovincialeyb3-mkvnvp0g@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260411T140000-motricitminibudo355ans-mkvqrz95@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
+DTSTART;TZID=America/New_York:20260411T100000
+DTEND;TZID=America/New_York:20260411T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260412T160000-comptitionprovincialeyb3-mkvqrzc1@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Compétition provinciale YB #3
 DTSTART;TZID=America/New_York:20260412T120000
 DTEND;TZID=America/New_York:20260412T200000
+DESCRIPTION:Heures: 12:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260413T040000-printemps2026-mkvnvpt8@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260413T040000-printemps2026-mkvqrzes@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Printemps 2026
 DTSTART;TZID=America/New_York:20260413T000000
 DTEND;TZID=America/New_York:20260413T000000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260413T220000-yoseikancardioboxe13ans-mkvnvqfm@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260413T220000-yoseikancardioboxe13ans-mkvqrzhh@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260413T180000
 DTEND;TZID=America/New_York:20260413T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260413T230000-yoseikanbudotraditionnel13ans-mkvnvqpl@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260413T230000-yoseikanbudotraditionnel13ans-mkvqrzmc@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260413T190000
 DTEND;TZID=America/New_York:20260413T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260414T213000-initiationauyoseikanbudo67ans-mkvnvqy4@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260413T230000-yoseikanbudotraditionnel13ans-mkvqrzpl@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
+DTSTART;TZID=America/New_York:20260413T190000
+DTEND;TZID=America/New_York:20260413T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260414T213000-initiationauyoseikanbudo67ans-mkvqrzt8@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260414T173000
 DTEND;TZID=America/New_York:20260414T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260414T223000-yoseikanbudo812ans-mkvnvr8c@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260414T223000-yoseikanbudo812ans-mkvqrzwa@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260414T183000
 DTEND;TZID=America/New_York:20260414T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260415T223000-yoseikanbudotechnique13ans-mkvnvrhw@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260414T223000-yoseikanbudo812ans-mkvqrzzp@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Yoseikan Budo (8 à 12 ans)
+DTSTART;TZID=America/New_York:20260414T183000
+DTEND;TZID=America/New_York:20260414T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260415T223000-yoseikanbudotechnique13ans-mkvqs02z@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260415T183000
 DTEND;TZID=America/New_York:20260415T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260418T130000-motricitminibudo235ans-mkvnvrqz@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260418T130000-motricitminibudo235ans-mkvqs05z@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260418T090000
 DTEND;TZID=America/New_York:20260418T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260418T140000-motricitminibudo355ans-mkvnvs0v@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260418T140000-motricitminibudo355ans-mkvqs081@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260418T100000
 DTEND;TZID=America/New_York:20260418T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260420T220000-yoseikancardioboxe13ans-mkvnvsau@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260420T220000-yoseikancardioboxe13ans-mkvqs0ax@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260420T180000
 DTEND;TZID=America/New_York:20260420T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260420T230000-yoseikanbudotraditionnel13ans-mkvnvsk0@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260420T230000-yoseikanbudotraditionnel13ans-mkvqs0ec@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260420T190000
 DTEND;TZID=America/New_York:20260420T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260421T213000-initiationauyoseikanbudo67ans-mkvnvstr@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260421T213000-initiationauyoseikanbudo67ans-mkvqs0h4@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260421T173000
 DTEND;TZID=America/New_York:20260421T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260421T223000-yoseikanbudo812ans-mkvnvt39@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260421T223000-yoseikanbudo812ans-mkvqs0k0@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260421T183000
 DTEND;TZID=America/New_York:20260421T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260422T223000-yoseikanbudotechnique13ans-mkvnvtdu@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260422T223000-yoseikanbudotechnique13ans-mkvqs0m3@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260422T183000
 DTEND;TZID=America/New_York:20260422T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260425T130000-motricitminibudo235ans-mkvnvtnk@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260425T130000-motricitminibudo235ans-mkvqs0nv@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260425T090000
 DTEND;TZID=America/New_York:20260425T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260425T140000-motricitminibudo355ans-mkvnvtxt@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260425T140000-motricitminibudo355ans-mkvqs0pt@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260425T100000
 DTEND;TZID=America/New_York:20260425T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260426T173000-entranementdelquipedecomptitioncentrenationaltr-mkvnvu8e@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260426T173000-entranementdelquipedecomptitioncentrenationaltr-mkvqs0so@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Entraînement de l'équipe de compétition | Centre National T-R
 DTSTART;TZID=America/New_York:20260426T133000
 DTEND;TZID=America/New_York:20260426T153000
+DESCRIPTION:Heures: 13:30 - 15:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260427T220000-yoseikancardioboxe13ans-mkvnvuw2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260427T220000-yoseikancardioboxe13ans-mkvqs0ui@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260427T180000
 DTEND;TZID=America/New_York:20260427T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260427T230000-yoseikanbudotraditionnel13ans-mkvnvv53@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260427T230000-yoseikanbudotraditionnel13ans-mkvqs0wf@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260427T190000
 DTEND;TZID=America/New_York:20260427T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260428T213000-initiationauyoseikanbudo67ans-mkvnvve1@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260428T213000-initiationauyoseikanbudo67ans-mkvqs0y9@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260428T173000
 DTEND;TZID=America/New_York:20260428T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260428T223000-yoseikanbudo812ans-mkvnvvn2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260428T223000-yoseikanbudo812ans-mkvqs10d@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260428T183000
 DTEND;TZID=America/New_York:20260428T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260429T223000-yoseikanbudotechnique13ans-mkvnvvx2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260429T223000-yoseikanbudotechnique13ans-mkvqs13g@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260429T183000
 DTEND;TZID=America/New_York:20260429T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260502T020000-stagedesjeunessamouras-mkvnvw6s@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260502T020000-stagedesjeunessamouras-mkvqs16n@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage des jeunes samouraïs
 DTSTART;TZID=America/New_York:20260501T220000
 DTEND;TZID=America/New_York:20260502T020000
+DESCRIPTION:Heures: 22:00 - 02:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260502T130000-motricitminibudo235ans-mkvnvwx7@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260502T130000-motricitminibudo235ans-mkvqs19a@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (2 à 3\,5 ans)
 DTSTART;TZID=America/New_York:20260502T090000
 DTEND;TZID=America/New_York:20260502T094500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 09:00 - 09:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260502T140000-motricitminibudo355ans-mkvnvx8k@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260502T140000-motricitminibudo355ans-mkvqs1gp@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Motricité (MiniBudo) (3\,5 à 5 ans)
 DTSTART;TZID=America/New_York:20260502T100000
 DTEND;TZID=America/New_York:20260502T104500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 10:00 - 10:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260502T160000-stagedesjeunessamouras-mkvnvxj2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260502T160000-stagedesjeunessamouras-mkvqs1in@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage des jeunes samouraïs
 DTSTART;TZID=America/New_York:20260502T120000
 DTEND;TZID=America/New_York:20260503T010000
+DESCRIPTION:Heures: 12:00 - 01:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260503T160000-stagedesjeunessamouras-mkvnvy9o@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260503T160000-stagedesjeunessamouras-mkvqs1kf@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage des jeunes samouraïs
 DTSTART;TZID=America/New_York:20260503T120000
 DTEND;TZID=America/New_York:20260503T190000
+DESCRIPTION:Heures: 12:00 - 19:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260504T220000-yoseikancardioboxe13ans-mkvnvz61@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260504T220000-yoseikancardioboxe13ans-mkvqs1m2@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260504T180000
 DTEND;TZID=America/New_York:20260504T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260504T230000-yoseikanbudotraditionnel13ans-mkvnvzfe@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260504T230000-yoseikanbudotraditionnel13ans-mkvqs1om@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260504T190000
 DTEND;TZID=America/New_York:20260504T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260505T213000-initiationauyoseikanbudo67ans-mkvnvzo2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260505T213000-initiationauyoseikanbudo67ans-mkvqs1q6@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260505T173000
 DTEND;TZID=America/New_York:20260505T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260505T223000-yoseikanbudo812ans-mkvnvzxa@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260505T223000-yoseikanbudo812ans-mkvqs1t7@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260505T183000
 DTEND;TZID=America/New_York:20260505T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260506T223000-yoseikanbudotechnique13ans-mkvnw05v@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260506T223000-yoseikanbudotechnique13ans-mkvqs1wm@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260506T183000
 DTEND;TZID=America/New_York:20260506T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260511T220000-yoseikancardioboxe13ans-mkvnw0fp@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260511T220000-yoseikancardioboxe13ans-mkvqs1ye@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260511T180000
 DTEND;TZID=America/New_York:20260511T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260511T230000-yoseikanbudotraditionnel13ans-mkvnw0ok@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260511T230000-yoseikanbudotraditionnel13ans-mkvqs218@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260511T190000
 DTEND;TZID=America/New_York:20260511T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260512T213000-initiationauyoseikanbudo67ans-mkvnw0ww@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260512T213000-initiationauyoseikanbudo67ans-mkvqs22t@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260512T173000
 DTEND;TZID=America/New_York:20260512T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260512T223000-yoseikanbudo812ans-mkvnw15j@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260512T223000-yoseikanbudo812ans-mkvqs25e@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260512T183000
 DTEND;TZID=America/New_York:20260512T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260513T223000-yoseikanbudotechnique13ans-mkvnw1ek@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260513T223000-yoseikanbudotechnique13ans-mkvqs277@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260513T183000
 DTEND;TZID=America/New_York:20260513T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260515T170000-stagenationalybduprintemps-mkvnw1o9@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260515T170000-stagenationalybduprintemps-mkvqs29w@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage national YB du printemps
 DTSTART;TZID=America/New_York:20260515T130000
 DTEND;TZID=America/New_York:20260516T020000
+DESCRIPTION:Heures: 13:00 - 02:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260516T170000-stagenationalybduprintemps-mkvnw2az@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260516T170000-stagenationalybduprintemps-mkvqs2bc@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage national YB du printemps
 DTSTART;TZID=America/New_York:20260516T130000
 DTEND;TZID=America/New_York:20260516T200000
+DESCRIPTION:Heures: 13:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260517T020000-souperetgalamritas-mkvnw2ww@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260517T020000-souperetgalamritas-mkvqs2cy@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Souper et gala méritas
 DTSTART;TZID=America/New_York:20260516T220000
 DTEND;TZID=America/New_York:20260517T020000
+DESCRIPTION:Heures: 22:00 - 02:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260517T170000-stagenationalybduprintemps-mkvnw3i2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260517T170000-stagenationalybduprintemps-mkvqs2eu@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage national YB du printemps
 DTSTART;TZID=America/New_York:20260517T130000
 DTEND;TZID=America/New_York:20260517T200000
+DESCRIPTION:Heures: 13:00 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260518T170000-stagenationalybduprintemps-mkvnw44q@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260518T040000-journenationaledespatriotes-mkvqs2gd@ybgaspesie.ca
+DTSTAMP:20260126T223114
+SUMMARY:Journée nationale des patriotes
+DTSTART;TZID=America/New_York:20260518T000000
+DTEND;TZID=America/New_York:20260518T184500
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:20260518T170000-stagenationalybduprintemps-mkvqs2h2@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Stage national YB du printemps
 DTSTART;TZID=America/New_York:20260518T130000
 DTEND;TZID=America/New_York:20260518T160000
+DESCRIPTION:Heures: 13:00 - 16:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260519T213000-initiationauyoseikanbudo67ans-mkvnw5hk@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260519T213000-initiationauyoseikanbudo67ans-mkvqs2ig@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260519T173000
 DTEND;TZID=America/New_York:20260519T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260519T223000-yoseikanbudo812ans-mkvnw5r2@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260519T223000-yoseikanbudo812ans-mkvqs2kx@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260519T183000
 DTEND;TZID=America/New_York:20260519T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260520T223000-yoseikanbudotechnique13ans-mkvnw616@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260520T223000-yoseikanbudotechnique13ans-mkvqs2o4@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260520T183000
 DTEND;TZID=America/New_York:20260520T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260525T220000-yoseikancardioboxe13ans-mkvnw6af@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260525T220000-yoseikancardioboxe13ans-mkvqs2pq@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260525T180000
 DTEND;TZID=America/New_York:20260525T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260525T230000-yoseikanbudotraditionnel13ans-mkvnw6k6@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260525T230000-yoseikanbudotraditionnel13ans-mkvqs2rn@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260525T190000
 DTEND;TZID=America/New_York:20260525T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260526T213000-initiationauyoseikanbudo67ans-mkvnw6ue@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260526T213000-initiationauyoseikanbudo67ans-mkvqs2t5@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Initiation au Yoseikan Budo (6 à 7 ans)
 DTSTART;TZID=America/New_York:20260526T173000
 DTEND;TZID=America/New_York:20260526T181500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 17:30 - 18:15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260526T223000-yoseikanbudo812ans-mkvnw74b@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260526T223000-yoseikanbudo812ans-mkvqs2ur@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo (8 à 12 ans)
 DTSTART;TZID=America/New_York:20260526T183000
 DTEND;TZID=America/New_York:20260526T193000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 19:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260527T223000-yoseikanbudotechnique13ans-mkvnw7er@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260527T223000-yoseikanbudotechnique13ans-mkvqs2x0@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Technique (13 ans +)
 DTSTART;TZID=America/New_York:20260527T183000
 DTEND;TZID=America/New_York:20260527T200000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:30 - 20:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260530T200000-25eanniversairedudojosttienne-mkvnw7pi@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260530T200000-25eanniversairedudojosttienne-mkvqs2yz@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:25e anniversaire du dojo St-Étienne
 DTSTART;TZID=America/New_York:20260530T160000
 DTEND;TZID=America/New_York:20260530T210000
+DESCRIPTION:Heures: 16:00 - 21:00
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260601T220000-yoseikancardioboxe13ans-mkvnw8do@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260601T220000-yoseikancardioboxe13ans-mkvqs31j@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260601T180000
 DTEND;TZID=America/New_York:20260601T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260601T230000-yoseikanbudotraditionnel13ans-mkvnw8m8@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260601T230000-yoseikanbudotraditionnel13ans-mkvqs334@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260601T190000
 DTEND;TZID=America/New_York:20260601T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260607T173000-entranementdelquipedecomptitioncentrenationaltr-mkvnw8z6@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260607T173000-entranementdelquipedecomptitioncentrenationaltr-mkvqs34i@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Entraînement de l'équipe de compétition | Centre National T-R
 DTSTART;TZID=America/New_York:20260607T133000
 DTEND;TZID=America/New_York:20260607T153000
+DESCRIPTION:Heures: 13:30 - 15:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260608T220000-yoseikancardioboxe13ans-mkvnw9kw@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260608T220000-yoseikancardioboxe13ans-mkvqs35w@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260608T180000
 DTEND;TZID=America/New_York:20260608T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260608T230000-yoseikanbudotraditionnel13ans-mkvnw9uu@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260608T230000-yoseikanbudotraditionnel13ans-mkvqs37f@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Budo Traditionnel (13 ans +)
 DTSTART;TZID=America/New_York:20260608T190000
 DTEND;TZID=America/New_York:20260608T203000
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 19:00 - 20:30
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260615T220000-yoseikancardioboxe13ans-mkvnwa3q@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260615T220000-yoseikancardioboxe13ans-mkvqs39h@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260615T180000
 DTEND;TZID=America/New_York:20260615T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:20260622T220000-yoseikancardioboxe13ans-mkvnwady@ybgaspesie.ca
-DTSTAMP:20260126T210909
+UID:20260622T220000-yoseikancardioboxe13ans-mkvqs3cd@ybgaspesie.ca
+DTSTAMP:20260126T223114
 SUMMARY:Yoseikan Cardio Boxe (13 ans +)
 DTSTART;TZID=America/New_York:20260622T180000
 DTEND;TZID=America/New_York:20260622T184500
+LOCATION:124 1re Avenue Ouest\, Sainte-Anne-des-Monts QC G4V 1C5\, Canada
+DESCRIPTION:Heures: 18:00 - 18:45
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR
