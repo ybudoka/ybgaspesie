@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horaires - Site Généré Automatiquement</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://ybudoka.github.io/ybgaspesie/website-styles.css">
+    <script>
+    // Navigation avec disparition/apparition au scroll
+    let lastScrollTop = 0;
+    let isScrolling = false;
+    
+    window.addEventListener('scroll', function() {
+      if (!isScrolling) {
+        window.requestAnimationFrame(function() {
+          const navigation = document.getElementById('mainNav');
+          if (!navigation) return;
+          
+          const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+          
+          if (currentScroll <= 0) {
+            // En haut de la page
+            navigation.classList.remove('nav-hidden');
+            navigation.classList.add('nav-visible');
+          } else if (currentScroll > lastScrollTop && currentScroll > 100) {
+            // Scroll vers le bas
+            navigation.classList.add('nav-hidden');
+            navigation.classList.remove('nav-visible');
+          } else {
+            // Scroll vers le haut
+            navigation.classList.remove('nav-hidden');
+            navigation.classList.add('nav-visible');
+          }
+          
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+          isScrolling = false;
+        });
+        isScrolling = true;
+      }
+    });
+    
+    // Menu mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+          navMenu.classList.toggle('nav-open');
+        });
+        
+        // Fermer le menu quand on clique sur un lien
+        navMenu.addEventListener('click', function(e) {
+          if (e.target.tagName === 'A') {
+            navMenu.classList.remove('nav-open');
+          }
+        });
+      }
+    });
+    
+/** 
+ * Fonction pour initialiser les interactions du calendrier
+ * Definition de initCalendarInteractions.
+ */
+    function initCalendarInteractions() {
+      const calendarCells = document.querySelectorAll('.calendar-cell');
+      calendarCells.forEach(cell => {
+        cell.addEventListener('click', function() {
+          // Logique d'interaction avec les cellules du calendrier
+          console.log('Cellule calendrier cliquée:', this);
+        });
+      });
+    }
+    
+    // Fonction pour initialiser le filtre des horaires
+    function initScheduleFilter() {
+      // Ajouter des filtres pour les horaires si nécessaire
+      console.log('Filtres horaires initialisés');
+    }
+    
+    // Animation d'apparition au scroll pour les éléments
+    function initScrollAnimations() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      });
+      
+      document.querySelectorAll('.content-section, .service-card, .day-schedule').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+      });
+    }
+    
+    // Initialiser les animations au chargement
+    document.addEventListener('DOMContentLoaded', initScrollAnimations);
+  </script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            initScheduleFilter();
+          });
+        </script>
+      
+</head>
+<body>
+    
+    <nav class="main-navigation" id="mainNav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          Site Généré Automatiquement
+        </div>
+        <ul class="nav-menu">
+          <li><a href="accueil.html">Accueil</a></li><li><a href="services.html">Services</a></li><li><a href="tarifs.html">Tarifs</a></li><li class="active"><a href="horaires.html">Horaires</a></li><li><a href="calendrier.html">Calendrier</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="container" style="position: relative; z-index: 1;">
+        <div class="page-title"><h1>Horaires</h1></div>
+        <div class="section" id="horaire-section"><div class="section-title">Horaire - Session Printemps 2026</div><p>Aucun cours actif pour cette session.</p></div>
+    </div>
+
+    
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Site Généré Automatiquement. Tous droits réservés.</p>
+        <p class="footer-note">Site généré automatiquement - Dernière mise à jour: 2026-03-26</p>
+      </div>
+    </footer>
+  
+</body>
+</html>
