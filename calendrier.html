@@ -29,15 +29,25 @@
     overlay.appendChild(modal);
     document.body.appendChild(overlay);
   }</script><script>function setupCalendarLegendFilters() {
-    var toggleButtons = Array.prototype.slice.call(document.querySelectorAll('.calendar-legend-toggle[data-session-slug]'));
+    var toggleButtons = Array.prototype.slice.call(document.querySelectorAll('.calendar-legend-toggle[data-session-slug], .calendar-legend-toggle[data-filter-type="cancelled"]'));
     var resetButton = document.querySelector('.calendar-filter-reset');
-    var courseEntries = Array.prototype.slice.call(document.querySelectorAll('.course-entry[data-session-slug]'));
+    var courseEntries = Array.prototype.slice.call(document.querySelectorAll('.course-entry[data-session-slug], .course-entry.course-entry-cancelled'));
     if (!toggleButtons.length || !courseEntries.length) return;
 
     var hiddenSessions = {};
+    var hideCancelled = false;
 
     function updateFilterState() {
       toggleButtons.forEach(function(button) {
+        var filterType = button.getAttribute('data-filter-type') || '';
+        if (filterType === 'cancelled') {
+          var cancelledVisible = !hideCancelled;
+          button.classList.toggle('is-selected', cancelledVisible);
+          button.classList.toggle('is-muted', !cancelledVisible);
+          button.setAttribute('aria-pressed', cancelledVisible ? 'true' : 'false');
+          return;
+        }
+
         var slug = button.getAttribute('data-session-slug') || '';
         var isVisible = !hiddenSessions[slug];
         button.classList.toggle('is-selected', isVisible);
@@ -46,20 +56,25 @@
       });
 
       courseEntries.forEach(function(entry) {
+        if (entry.classList.contains('course-entry-cancelled')) {
+          entry.classList.toggle('session-dimmed', hideCancelled);
+          return;
+        }
         var slug = entry.getAttribute('data-session-slug') || '';
-        var isHidden = !!hiddenSessions[slug];
-        entry.classList.toggle('session-hidden', isHidden);
-      });
-
-      var calendarCells = Array.prototype.slice.call(document.querySelectorAll('.calendar-cell'));
-      calendarCells.forEach(function(cell) {
-        var visibleEntries = cell.querySelectorAll('.course-entry:not(.session-hidden)');
-        cell.classList.toggle('calendar-cell-no-visible-courses', visibleEntries.length === 0 && !!cell.querySelector('.course-entry'));
+        var isDimmed = !!hiddenSessions[slug];
+        entry.classList.toggle('session-dimmed', isDimmed);
       });
     }
 
     toggleButtons.forEach(function(button) {
       button.addEventListener('click', function() {
+        var filterType = button.getAttribute('data-filter-type') || '';
+        if (filterType === 'cancelled') {
+          hideCancelled = !hideCancelled;
+          updateFilterState();
+          return;
+        }
+
         var slug = button.getAttribute('data-session-slug') || '';
         hiddenSessions[slug] = !hiddenSessions[slug];
         updateFilterState();
@@ -69,6 +84,7 @@
     if (resetButton) {
       resetButton.addEventListener('click', function() {
         hiddenSessions = {};
+        hideCancelled = false;
         updateFilterState();
       });
     }
@@ -90,35 +106,11 @@
       <p><strong>Session active:</strong> Hiver 2026</p>
       <p><strong>Session en inscription:</strong> Printemps 2026</p>
     </div>
-        <section class="calendar-legend" aria-label="Légende des sessions"><div class="calendar-legend-header"><div><h3>Sessions du calendrier</h3><p>Couleur par saison, badges de statut et filtre rapide par session.</p></div><button type="button" class="calendar-filter-reset">Tout afficher</button></div><div class="calendar-legend-list"><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="hiver-2026" style="--session-accent:#38bdf8; --session-accent-soft:rgba(56, 189, 248, 0.18);" aria-pressed="true">
+        <section class="calendar-legend" aria-label="Légende des sessions"><div class="calendar-legend-header"><div><h3>Sessions du calendrier</h3><p>Couleur par saison, badges de statut et filtre rapide.</p></div><button type="button" class="calendar-filter-reset">Tout afficher</button></div><div class="calendar-legend-list"><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="hiver-2026" style="--session-accent:#38bdf8; --session-accent-soft:rgba(56, 189, 248, 0.18);" aria-pressed="true">
       <span class="calendar-legend-dot" aria-hidden="true"></span>
       <span class="calendar-legend-content">
         <span class="calendar-legend-label">Hiver 2026</span>
         <span class="calendar-legend-meta"><span class="calendar-legend-season">Hiver</span><span class="calendar-legend-badge is-active">Session active</span></span>
-      </span>
-    </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="cours-repris-en-fin-de-session-initiation-au-yoseikan-budo-6-a-7-ans" style="--session-accent:#94a3b8; --session-accent-soft:rgba(148, 163, 184, 0.16);" aria-pressed="true">
-      <span class="calendar-legend-dot" aria-hidden="true"></span>
-      <span class="calendar-legend-content">
-        <span class="calendar-legend-label">Cours repris en fin de session : Initiation au Yoseikan Budo (6 à 7 ans)</span>
-        <span class="calendar-legend-meta"><span class="calendar-legend-season">Session</span></span>
-      </span>
-    </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="cours-repris-en-fin-de-session-motricite-minibudo-2-a-3-5-ans" style="--session-accent:#94a3b8; --session-accent-soft:rgba(148, 163, 184, 0.16);" aria-pressed="true">
-      <span class="calendar-legend-dot" aria-hidden="true"></span>
-      <span class="calendar-legend-content">
-        <span class="calendar-legend-label">Cours repris en fin de session : Motricité (MiniBudo) (2 à 3,5 ans)</span>
-        <span class="calendar-legend-meta"><span class="calendar-legend-season">Session</span></span>
-      </span>
-    </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="cours-repris-en-fin-de-session-yoseikan-budo-traditionnel-13-ans" style="--session-accent:#94a3b8; --session-accent-soft:rgba(148, 163, 184, 0.16);" aria-pressed="true">
-      <span class="calendar-legend-dot" aria-hidden="true"></span>
-      <span class="calendar-legend-content">
-        <span class="calendar-legend-label">Cours repris en fin de session : Yoseikan Budo Traditionnel (13 ans +)</span>
-        <span class="calendar-legend-meta"><span class="calendar-legend-season">Session</span></span>
-      </span>
-    </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="cours-repris-en-fin-de-session-yoseikan-budo-technique-13-ans" style="--session-accent:#94a3b8; --session-accent-soft:rgba(148, 163, 184, 0.16);" aria-pressed="true">
-      <span class="calendar-legend-dot" aria-hidden="true"></span>
-      <span class="calendar-legend-content">
-        <span class="calendar-legend-label">Cours repris en fin de session : Yoseikan Budo Technique (13 ans +)</span>
-        <span class="calendar-legend-meta"><span class="calendar-legend-season">Session</span></span>
       </span>
     </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="printemps-2026" style="--session-accent:#34d399; --session-accent-soft:rgba(52, 211, 153, 0.18);" aria-pressed="true">
       <span class="calendar-legend-dot" aria-hidden="true"></span>
@@ -126,19 +118,12 @@
         <span class="calendar-legend-label">Printemps 2026</span>
         <span class="calendar-legend-meta"><span class="calendar-legend-season">Printemps</span><span class="calendar-legend-badge is-inscription">Inscription</span></span>
       </span>
-    </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="vendredi-saint" style="--session-accent:#94a3b8; --session-accent-soft:rgba(148, 163, 184, 0.16);" aria-pressed="true">
-      <span class="calendar-legend-dot" aria-hidden="true"></span>
-      <span class="calendar-legend-content">
-        <span class="calendar-legend-label">Vendredi saint</span>
-        <span class="calendar-legend-meta"><span class="calendar-legend-season">Session</span></span>
-      </span>
-    </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected" data-session-slug="journee-nationale-des-patriotes" style="--session-accent:#94a3b8; --session-accent-soft:rgba(148, 163, 184, 0.16);" aria-pressed="true">
-      <span class="calendar-legend-dot" aria-hidden="true"></span>
-      <span class="calendar-legend-content">
-        <span class="calendar-legend-label">Journée nationale des patriotes</span>
-        <span class="calendar-legend-meta"><span class="calendar-legend-season">Session</span></span>
-      </span>
-    </button></div></section><div class="responsive-calendar"><div class="month-container">
+    </button><button type="button" class="calendar-legend-item calendar-legend-toggle is-selected calendar-legend-item-cancelled" data-filter-type="cancelled" aria-pressed="true">
+    <span class="calendar-legend-dot" aria-hidden="true"></span>
+    <span class="calendar-legend-content">
+      <span class="calendar-legend-label">Cours annulés</span>
+    </span>
+  </button></div></section><div class="responsive-calendar"><div class="month-container">
       <h2>janvier 2026</h2>
       <div class="calendar-header">
         <div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div>
@@ -187,7 +172,11 @@
                   <span class="course-session-dot" style="background:#38bdf8;" aria-hidden="true"></span>Yoseikan Budo Traditionnel (13 ans +)<br>
                 </div>
                 <div class="course-hours">19:00 - 20:30</div>
-              </div></div></div><div class="calendar-cell"><div class="day-no">20</div><div class="course-list"></div></div><div class="calendar-cell"><div class="day-no">21</div><div class="course-list"><div class="course-entry" data-session-slug="hiver-2026">
+              </div></div></div><div class="calendar-cell"><div class="day-no">20</div><div class="course-list"><div class="course-entry course-entry-cancelled">
+                <div class="course-item course-item-cancelled">
+                  <span class="course-session-dot cancelled-dot" aria-hidden="true"></span>Cours annulé: Initiation au Yoseikan Budo (6 à 7 ans)
+                </div>
+              </div></div></div><div class="calendar-cell"><div class="day-no">21</div><div class="course-list"><div class="course-entry" data-session-slug="hiver-2026">
                 <div class="course-item course-item-session" style="--session-accent:#38bdf8; --session-accent-soft:rgba(56, 189, 248, 0.18);" title="Session: Hiver 2026">
                   <span class="course-session-dot" style="background:#38bdf8;" aria-hidden="true"></span>Yoseikan Budo Technique (13 ans +)<br>
                 </div>
@@ -301,7 +290,11 @@
                   <span class="course-session-dot" style="background:#38bdf8;" aria-hidden="true"></span>Yoseikan Budo Technique (13 ans +)<br>
                 </div>
                 <div class="course-hours">18:30 - 20:00</div>
-              </div></div></div><div class="calendar-cell"><div class="day-no">12</div></div><div class="calendar-cell"><div class="day-no">13</div></div><div class="calendar-cell"><div class="day-no">14</div><div class="course-list"></div></div><div class="calendar-cell"><div class="day-no">15</div></div><div class="calendar-cell"><div class="day-no">16</div><div class="course-list"><div class="course-entry" data-session-slug="hiver-2026">
+              </div></div></div><div class="calendar-cell"><div class="day-no">12</div></div><div class="calendar-cell"><div class="day-no">13</div></div><div class="calendar-cell"><div class="day-no">14</div><div class="course-list"><div class="course-entry course-entry-cancelled">
+                <div class="course-item course-item-cancelled">
+                  <span class="course-session-dot cancelled-dot" aria-hidden="true"></span>Cours annulé: Motricité (MiniBudo) (2 à 3,5 ans)
+                </div>
+              </div></div></div><div class="calendar-cell"><div class="day-no">15</div></div><div class="calendar-cell"><div class="day-no">16</div><div class="course-list"><div class="course-entry" data-session-slug="hiver-2026">
                 <div class="course-item course-item-session" style="--session-accent:#38bdf8; --session-accent-soft:rgba(56, 189, 248, 0.18);" title="Session: Hiver 2026">
                   <span class="course-session-dot" style="background:#38bdf8;" aria-hidden="true"></span>Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
@@ -375,7 +368,23 @@
       <h2>mars 2026</h2>
       <div class="calendar-header">
         <div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div>
-      </div><div class="calendar-grid"><div class="calendar-cell"><div class="day-no">1</div></div><div class="calendar-cell"><div class="day-no">2</div><div class="course-list"></div></div><div class="calendar-cell"><div class="day-no">3</div><div class="course-list"></div></div><div class="calendar-cell"><div class="day-no">4</div><div class="course-list"></div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell"><div class="day-no">6</div></div><div class="calendar-cell"><div class="day-no">7</div><div class="course-list"></div></div><div class="calendar-cell"><div class="day-no">8</div></div><div class="calendar-cell"><div class="day-no">9</div><div class="course-list"><div class="course-entry" data-session-slug="hiver-2026">
+      </div><div class="calendar-grid"><div class="calendar-cell"><div class="day-no">1</div></div><div class="calendar-cell"><div class="day-no">2</div><div class="course-list"><div class="course-entry course-entry-cancelled">
+                <div class="course-item course-item-cancelled">
+                  <span class="course-session-dot cancelled-dot" aria-hidden="true"></span>Cours annulé: Yoseikan Budo Traditionnel (13 ans +)
+                </div>
+              </div></div></div><div class="calendar-cell"><div class="day-no">3</div><div class="course-list"><div class="course-entry course-entry-cancelled">
+                <div class="course-item course-item-cancelled">
+                  <span class="course-session-dot cancelled-dot" aria-hidden="true"></span>Cours annulé: Initiation au Yoseikan Budo (6 à 7 ans)
+                </div>
+              </div></div></div><div class="calendar-cell"><div class="day-no">4</div><div class="course-list"><div class="course-entry course-entry-cancelled">
+                <div class="course-item course-item-cancelled">
+                  <span class="course-session-dot cancelled-dot" aria-hidden="true"></span>Cours annulé: Yoseikan Budo Technique (13 ans +)
+                </div>
+              </div></div></div><div class="calendar-cell"><div class="day-no">5</div></div><div class="calendar-cell"><div class="day-no">6</div></div><div class="calendar-cell"><div class="day-no">7</div><div class="course-list"><div class="course-entry course-entry-cancelled">
+                <div class="course-item course-item-cancelled">
+                  <span class="course-session-dot cancelled-dot" aria-hidden="true"></span>Cours annulé: Motricité (MiniBudo) (2 à 3,5 ans)
+                </div>
+              </div></div></div><div class="calendar-cell"><div class="day-no">8</div></div><div class="calendar-cell"><div class="day-no">9</div><div class="course-list"><div class="course-entry" data-session-slug="hiver-2026">
                 <div class="course-item course-item-session" style="--session-accent:#38bdf8; --session-accent-soft:rgba(56, 189, 248, 0.18);" title="Session: Hiver 2026">
                   <span class="course-session-dot" style="background:#38bdf8;" aria-hidden="true"></span>Yoseikan Cardio Boxe (13 ans +)<br>
                 </div>
