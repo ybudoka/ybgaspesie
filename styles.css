@@ -206,40 +206,8 @@
   margin-bottom: 2px;
   text-align: right;
 }
-.calendar-cell.is-today {
-    border: 2px solid #ffd700;
-    box-shadow: 0 0 0 1px rgba(255, 224, 102, 0.45), 0 0 18px rgba(255, 224, 102, 0.28);
-    background: linear-gradient(145deg, rgba(57, 64, 82, 0.98) 0%, rgba(70, 78, 98, 0.95) 100%);
-}
-.calendar-cell .day-no.today {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 32px;
-    height: 32px;
-    padding: 0 8px;
-    border-radius: 999px;
-    background: #ffd700;
-    color: #1f2430;
-    text-align: center;
-    font-weight: 800;
-}
-.today-badge {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    display: inline-flex;
-    align-items: center;
-    padding: 2px 8px;
-    border-radius: 999px;
-    background: #ffd700;
-    color: #1b1f2a;
-    font-size: 0.66rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.25);
-    z-index: 1;
+.calendar-cell.today {
+    border: 2px solid #ffe066;
 }
 .calendar-cell .course-list {
   margin-top: 2px;
@@ -271,18 +239,6 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 16px;
-    .today-badge {
-        top: 4px;
-        left: 4px;
-        padding: 2px 6px;
-        font-size: 0.58rem;
-    }
-    .calendar-cell .day-no.today {
-        min-width: 26px;
-        height: 26px;
-        font-size: 0.88em;
-        padding: 0 6px;
-    }
     margin-bottom: 14px;
 }
 .calendar-legend-header h3 {
@@ -673,9 +629,6 @@ a:hover {
         padding: 8px 12px;
         font-size: 0.76rem;
     }
-    .today-badge {
-        font-size: 0.54rem;
-    }
 }
 
 @media (max-width: 360px) {
@@ -689,18 +642,6 @@ a:hover {
     .calendar-legend-season,
     .calendar-legend-badge {
         font-size: 0.62rem;
-    }
-    .today-badge {
-        position: static;
-        display: inline-flex;
-        margin-bottom: 4px;
-        font-size: 0.52rem;
-    }
-    .calendar-cell .day-no.today {
-        min-width: 22px;
-        height: 22px;
-        font-size: 0.78em;
-        padding: 0 5px;
     }
 }
 .calendar-container .course-list {
