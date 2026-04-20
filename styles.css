@@ -604,7 +604,7 @@ a:hover {
 
 @media (max-width: 640px) {
     .month-container {
-        min-width: 680px;
+        min-width: 800px;
         margin-bottom: 22px;
     }
     .calendar-header {
@@ -638,15 +638,17 @@ a:hover {
         width: 100%;
         border-radius: 12px;
     }
-    .calendar-cell .course-item.course-item-session {
-        white-space: normal;
-        word-break: break-word;
+    .calendar-cell .course-item {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: normal;
     }
 }
 
 @media (max-width: 480px) {
     .month-container {
-        min-width: 620px;
+        min-width: 730px;
     }
     .calendar-header {
         font-size: 0.76rem;
@@ -658,6 +660,10 @@ a:hover {
     }
     .calendar-cell .course-item {
         padding: 3px 4px;
+        gap: 4px;
+    }
+    .calendar-cell .course-item.course-item-session .course-session-dot {
+        display: none;
     }
     .calendar-cell .course-hours {
         font-size: 0.94em;
@@ -678,7 +684,7 @@ a:hover {
 
 @media (max-width: 360px) {
     .month-container {
-        min-width: 560px;
+        min-width: 660px;
     }
     .calendar-header {
         font-size: 0.72rem;
