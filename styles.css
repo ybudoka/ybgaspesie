@@ -2,6 +2,8 @@
 .responsive-calendar {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
   padding: 0;
 }
 .calendar-grid {
@@ -586,6 +588,9 @@ a:hover {
 }   
 
 @media (max-width: 960px) {
+    .month-container {
+        margin-bottom: 28px;
+    }
     .calendar-legend {
         padding: 16px;
     }
@@ -598,6 +603,29 @@ a:hover {
 }
 
 @media (max-width: 640px) {
+    .month-container {
+        min-width: 680px;
+        margin-bottom: 22px;
+    }
+    .calendar-header {
+        font-size: 0.82rem;
+        padding: 5px 3px;
+    }
+    .calendar-cell {
+        min-height: 76px;
+        padding: 5px 3px;
+        font-size: 0.78em;
+    }
+    .calendar-cell .day-no {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+    .calendar-cell .course-list {
+        margin-top: 3px;
+    }
+    .calendar-cell .course-hours {
+        line-height: 1.3;
+    }
     .calendar-session-meta {
         flex-direction: column;
         gap: 8px;
@@ -617,6 +645,23 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    .month-container {
+        min-width: 620px;
+    }
+    .calendar-header {
+        font-size: 0.76rem;
+    }
+    .calendar-cell {
+        min-height: 66px;
+        padding: 4px 3px;
+        font-size: 0.72em;
+    }
+    .calendar-cell .course-item {
+        padding: 3px 4px;
+    }
+    .calendar-cell .course-hours {
+        font-size: 0.94em;
+    }
     .calendar-legend-header h3 {
         font-size: 0.94rem;
     }
@@ -632,6 +677,21 @@ a:hover {
 }
 
 @media (max-width: 360px) {
+    .month-container {
+        min-width: 560px;
+    }
+    .calendar-header {
+        font-size: 0.72rem;
+        padding: 4px 2px;
+    }
+    .calendar-cell {
+        min-height: 58px;
+        padding: 3px 2px;
+        font-size: 0.68em;
+    }
+    .calendar-cell .day-no {
+        font-size: 0.92rem;
+    }
     .calendar-legend {
         padding: 12px;
     }
